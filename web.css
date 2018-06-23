@@ -1,0 +1,91 @@
+body {
+  font-family: "Indie Flower", cursive;
+}
+
+
+ul {
+  position: relative;
+  margin-top: 10px;
+  background-color: #85adad;
+  font-size: 25px;
+  list-style-type: none;
+  overflow: hidden; 
+  border: 2px solid #527a7a;
+  text-shadow: 2px 2px black;
+  
+}
+
+li {
+  display: inline;
+  float: right; 
+  
+}
+
+li a {
+  color: white;
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #404040;
+}
+
+.active {
+  background-color: #527a7a;
+}
+
+
+
+.name {
+  font-size: 60px;
+  color: #595959;
+  line-height: 0.15;
+  position: relative;
+  top: 50px;
+  left: 180px;
+  text-shadow: 5px 5px #262626
+}
+
+h1::first-letter {
+  font-size: 250px;
+}
+
+.cat1 img {
+  position: relative;
+  display: block;
+  left: 600px;
+  top: -150px;
+  height: 300px;
+  z-index: -1;
+}
+
+#profile {
+  height: 320px;
+  display: block;
+  margin-top: -50px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.intro img {
+  height: 300px;
+  display: block;
+  border-radius: 50%;
+  margin-top: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid grey;
+  clear: both;
+  
+}
+
+
+
+p {
+  text-align: center;
+  font-size: 25px;
+}

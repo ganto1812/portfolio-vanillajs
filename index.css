@@ -2,8 +2,27 @@ body {
   font-family: "Indie Flower", cursive;
 }
 
+.fas {
+  color: #527a7a;
+  margin-left: 50px;
+  font-size: 50px;
+}
 
-ul {
+.paw1 {
+-webkit-transform: rotate(50deg);
+-moz-transform: rotate(50deg);
+-ms-transform: rotate(50deg);
+-o-transform: rotate(50deg);
+}
+
+.paw2 {
+  -webkit-transform: rotate(130deg);
+  -moz-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  -o-transform: rotate(130deg);
+}
+
+nav ul {
   position: relative;
   margin-top: 10px;
   background-color: #85adad;
@@ -61,10 +80,15 @@ h1::first-letter {
   z-index: -1;
 }
 
+.section {
+font-size: 50px;
+margin-top: 350px;
+text-align: center;
+}
+
 #profile {
   height: 320px;
   display: block;
-  margin-top: -50px;
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
@@ -89,3 +113,46 @@ p {
   text-align: center;
   font-size: 25px;
 }
+
+.fa {
+  color: #527a7a;
+  font-size: 100px;
+}
+
+.contact {
+  color: #4d4d4d;
+  font-size: 50px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+input {
+  
+  padding: 15px;
+}
+
+#message {
+  display: flex; 
+  margin: -80px auto auto auto;
+  padding: 10px;
+}
+
+#button {
+  display: block;
+  margin: auto auto;
+  border-radius: 10px; 
+  padding: 10px;  
+}
+
+button:hover {
+  background-color: #404040;
+  color: white;
+}
+
+#topIcon {
+  position: fixed;
+  width: 100px;
+  right: 100px;
+  bottom: 100px;
+}
+

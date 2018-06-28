@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +16,15 @@
   <!-- navigation bar-->
   <nav class="navbar">
     <ul>
-      <li><a href="#">Contact me!</a>
+        <i class="paw1 fas fa-paw"></i>
+        <i class="paw2 fas fa-paw"></i>
+        <i class="paw1 fas fa-paw"></i>
+        <i class="paw2 fas fa-paw"></i>
+      <li><a href="#contactme">Contact me!</a>
       </li>
-      <li><a href="#">Projects!</a>
+      <li><a href="#projects">Projects!</a>
       </li>
-      <li><a href="#profile">About me!</a>
+      <li><a href="#aboutme">About me!</a>
       </li>
       <li><a class="active" href="#">Home!</a>
       </li>
@@ -39,43 +44,73 @@
       <img src="cat.png" alt="cat 1">
     </div>
 
-    <!--My intro-->
-    <img id="profile" src="me.jpg" alt="Picture of myself"></img>
+  <!--My intro-->
+  <div class="section" id="aboutme">
+    <h1><i class="fas fa-paw"></i> Contact Me!</h1>
+  <img id="profile" src="me.jpg" alt="Picture of myself"></img>
 
-    <div class="intro">
-      <p>Hi!</p>
-      <p>My name is Antonella and I'm a passionate web developer and designer.</p>
+  <div class="intro">
+    <p>Hi!</p>
+    <p>My name is Antonella and I'm a passionate web developer and designer.</p>
 
-      <img src="globe.jpg" alt="globe">
-      </img>
-      <p>I've lived in different parts of the world troughout my life</p>
+    <img src="globe.jpg" alt="globe">
+    </img>
+    <p>I've lived in different parts of the world troughout my life</p>
 
-      <img src="cult.jpg" alt="flags from different countries">
-      </img>
+    <img src="cult.jpg" alt="flags from different countries">
+    </img>
 
-      <p>And had the chance to learn a lot about other cultures and languages.</p>
+    <p>And had the chance to learn a lot about other cultures and languages.</p>
 
-      <img src="baby.jpg" alt="baby with pc">
-      </img>
+    <img src="baby.jpg" alt="baby with pc">
+    </img>
 
-      <p>I was always passionate about computers ever since I was little.</p>
+    <p>I was always passionate about computers ever since I was little.</p>
 
-      <img src="pc.png" alt="picture of my pc">
-      </img>
+    <img src="pc.png" alt="picture of my pc">
+    </img>
 
-      <p>I even built my own and I love it!</p>
+    <p>I even built my own and I love it!</p>
 
-      <img src="coding.png" alt="different programs for coding">
-      </img>
 
-      <p>I began my journey as a web developer and made a few projects.</p>
-      <p>Check them out!</p>
-    </div>
+ <!--My projects-->
+ <div class="section" id="projects">
+    <h1><i class="fas fa-paw"></i> My Projects!</h1>
+    <p id="projects">I began my journey as a web developer and made a few projects.</p>
+    <p>Check them out!</p>
+  </div>
+  </div>
 
-    <!--My projects-->
     <img src="tribute.png"></img>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b059eaa21635158"></script>
+
+
+  <!--Contact Me-->
+  <div class="section" id="contactme">
+      <h1><i class="fas fa-paw"></i> Contact Me!</h1>
+    </div>
+    <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
+
+  <!--Form-->
+  <form id="contact" action="mailto:apisaniroa@gmail.com" method="post" class="contact">
+  Name
+  <input type="text" name="name"><br>
+  E-Mail
+  <input type="text" name="email"><br>
+  Message 
+  </form>
+
+  <div class ="message">
+  <textarea id="message" type="text" name="message" form="contact" rows="10" cols="50"></textarea>
+  <br>
+  <button id="button" type="submit" name="submit" class="fa fa-heart"> Send</button>
+  </div>
+
+
+
+
+  <!--Scripts-->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b059eaa21635158"></script>
 </body>
 
 </html>

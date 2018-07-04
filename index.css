@@ -2,31 +2,19 @@ body {
   font-family: "Indie Flower", cursive;
 }
 
-.fas {
-  color: #527a7a;
-  margin-left: 50px;
-  font-size: 50px;
+.navbar {
+  font-size: 1.5vw;
+  display: block;
 }
-
-.paw1 {
--webkit-transform: rotate(50deg);
--moz-transform: rotate(50deg);
--ms-transform: rotate(50deg);
--o-transform: rotate(50deg);
-}
-
-.paw2 {
-  -webkit-transform: rotate(130deg);
-  -moz-transform: rotate(130deg);
-  -ms-transform: rotate(130deg);
-  -o-transform: rotate(130deg);
+<--@media .navbar {0
+  grid-template-columns: 4fr;
+  grid-template-rows: 2fr;
 }
 
 nav ul {
-  position: relative;
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
   background-color: #85adad;
-  font-size: 25px;
   list-style-type: none;
   overflow: hidden; 
   border: 2px solid #527a7a;
@@ -34,8 +22,22 @@ nav ul {
   
 }
 
+.box1 {
+  color: #527a7a;
+  font-size: 2vw;
+  justify-content: space-around;
+}
+.paw1 {
+transform: rotate(50deg);
+}
+
+.paw2 {
+transform: rotate(130deg);
+}
+
+
 li {
-  display: inline;
+  display: flex;
   float: right;
   
 }
@@ -55,15 +57,22 @@ li a:hover {
   background-color: #527a7a;
 }
 
+@media (max-width: 600px) {
+
+
+}
+
 
 
 .name {
+  display: block;
+  width: 100%;
   font-size: 60px;
   color: #595959;
   line-height: 0.15;
   position: relative;
-  top: 50px;
-  left: 180px;
+  margin-top: 20%;
+  margin-left: 10%;
   text-shadow: 5px 5px #262626
 }
 
@@ -84,6 +93,10 @@ h1::first-letter {
 font-size: 50px;
 margin-top: 350px;
 text-align: center;
+}
+
+h2 {
+color: #527a7a
 }
 
 .projectImage {

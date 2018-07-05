@@ -2,50 +2,54 @@ body {
   font-family: "Indie Flower", cursive;
 }
 
-.navbar {
-  font-size: 1.5vw;
-  display: block;
-}
-<--@media .navbar {0
-  grid-template-columns: 4fr;
-  grid-template-rows: 2fr;
+.container {
+  width: 100%;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
+.navbar {
+  margin: 0 -10px;
+  padding: 0 5%;
+  font-size: 1.5vw;
+  font-weight: 600;
   background-color: #85adad;
   list-style-type: none;
-  overflow: hidden; 
   border: 2px solid #527a7a;
   text-shadow: 2px 2px black;
   
 }
 
 .box1 {
+  width: 50%;
   color: #527a7a;
   font-size: 2vw;
-  justify-content: space-around;
+  word-spacing: 20px;
+  float: left;
 }
+
+.box2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .paw1 {
-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
 
 .paw2 {
-transform: rotate(130deg);
+  transform: rotate(130deg);
 }
 
 
 li {
-  display: flex;
   float: right;
-  
+  align-items: center;
 }
 
 li a {
+  display: flex;
   color: white;
-  display: block;
-  padding: 10px 40px;
+  padding: 0.5vw 2vw;
   text-decoration: none;
 }
 
@@ -57,13 +61,6 @@ li a:hover {
   background-color: #527a7a;
 }
 
-@media (max-width: 600px) {
-
-
-}
-
-
-
 .name {
   display: block;
   width: 100%;
@@ -71,7 +68,7 @@ li a:hover {
   color: #595959;
   line-height: 0.15;
   position: relative;
-  margin-top: 20%;
+  margin-top: 500px;
   margin-left: 10%;
   text-shadow: 5px 5px #262626
 }
@@ -181,3 +178,24 @@ button:hover {
   bottom: 100px;
 }
 
+
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;  
+    
+  }
+  .box1 {
+    text-align: center;
+  }
+  .box2 {
+    display: block;
+    width: 100%;
+  }
+
+  li a {
+    display: block;
+  }
+
+}

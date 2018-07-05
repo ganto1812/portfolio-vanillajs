@@ -14,8 +14,8 @@
 <body>
 
   <!-- navigation bar-->
-  <nav class="navbar">
-    <ul>
+  <div class="container" id="home">
+    <ul class="navbar">
       <div class="box1">
         <i class="paw1 fas fa-paw"></i>
         <i class="paw2 fas fa-paw"></i>
@@ -23,17 +23,22 @@
         <i class="paw2 fas fa-paw"></i>
       </div>
       <div class="box2">
-        <li><a href="#contactme">About me!</a>
+        <li>
+          <a class="active" href="#home">Home!</a>
         </li>
-        <li><a href="#projects">Projects!</a>
+        <li>
+          <a href="#aboutme">About me!</a>
         </li>
-        <li><a href="#aboutme">About me!</a>
+        <li>
+          <a href="#projects">Projects!</a>
         </li>
-        <li><a class="active" href="#">Home!</a>
+        <li>
+          <a href="#contactme">Contact me!</a>
         </li>
       </div>
     </ul>
-  </nav>
+  </div>
+  
 
   <div class="main">
 
@@ -107,7 +112,7 @@
   <div class ="message">
   <textarea id="message" type="text" name="message" form="contact" rows="10" cols="50"></textarea>
   <br>
-  <button id="button" type="submit" name="submit" class="fa fa-heart"> Send</button>
+  <button id="button" type="submit" name="submit" class="fas fa-paw"> Send</button>
   </div>
 
 

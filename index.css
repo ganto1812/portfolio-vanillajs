@@ -2,58 +2,43 @@ body {
   font-family: "Indie Flower", cursive;
 }
 
-.container {
-  width: 100%;
-}
-
 .navbar {
-  margin: 0 -10px;
-  padding: 0 5%;
+  margin-top: -8px;
+  width: 103%;
+  margin-left: -2%;
+  text-align: center;
   font-size: 1.5vw;
-  font-weight: 600;
+  font-weight: 800;
   background-color: #85adad;
-  list-style-type: none;
   border: 2px solid #527a7a;
-  text-shadow: 2px 2px black;
-  
+  text-shadow: 0.1vw 0.2vw #404040;
+  display: flex;
 }
 
 .box1 {
   width: 50%;
+  display: flex;
+  justify-content: center;
   color: #527a7a;
   font-size: 2vw;
-  word-spacing: 20px;
-  float: left;
+  letter-spacing: 6vw;
 }
 
 .box2 {
-  width: 50%;
+  width: 48%;
   display: flex;
-  justify-content: flex-end;
-}
-
-.paw1 {
-  transform: rotate(50deg);
-}
-
-.paw2 {
-  transform: rotate(130deg);
+  background-color: #85adad;
 }
 
 
-li {
-  float: right;
+a {
+  width: 25%;
   align-items: center;
-}
-
-li a {
-  display: flex;
-  color: white;
-  padding: 0.5vw 2vw;
+  color: white; 
   text-decoration: none;
 }
 
-li a:hover {
+a:hover {
   background-color: #404040;
 }
 
@@ -133,13 +118,13 @@ p {
 
 .contact {
   color: #4d4d4d;
-  font-size: 50px;
+  font-size: 30px;
   margin: 100px auto;
   text-align: center;
 }
 
 input {
-  
+  margin: 10px;
   padding: 15px;
 }
 
@@ -153,7 +138,7 @@ input {
   display: block;
   margin: auto auto;
   border-radius: 10px; 
-  padding: 10px;  
+  padding: 10px;
 }
 
 button:hover {

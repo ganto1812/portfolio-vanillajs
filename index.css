@@ -31,14 +31,15 @@ body {
 }
 
 
-a {
+.box2 a {
   width: 25%;
   align-items: center;
   color: white; 
   text-decoration: none;
+  margin: auto;
 }
 
-a:hover {
+.box2 a:hover {
   background-color: #404040;
 }
 
@@ -74,21 +75,19 @@ margin-top: 500px;
 text-align: center;
 }
 
-.projectImage {
-  display: block;
-  width: 30%;
-  margin: auto;
-  margin-top: 150px;
-  border-radius: 50%;
-}
-
-em {
-  font-size: 20px;
+.sectionPaw {
+  color: #527a7a;
+  font-size: 60px;
 }
 
 #profile {
   margin-top: 0;
   border: none
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
 }
 
 .circleImage {
@@ -101,19 +100,17 @@ em {
   margin-left: auto;
   border: solid grey;
   clear: both;
-  
 }
 
-
-
-p {
-  text-align: center;
-  font-size: 25px;
+.projectImage {
+  margin: auto;
+  width: 300px;
+  margin-top: 150px;
+  border-radius: 50%;
 }
 
-.sectionPaw {
-  color: #527a7a;
-  font-size: 60px;
+em {
+  font-size: 20px;
 }
 
 .contact {

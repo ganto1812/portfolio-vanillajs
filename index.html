@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -13,24 +14,7 @@
 
 <body>
 
-  <!-- navigation bar-->
-  <div class="navbar" id="home">
-    <div class="box1">
-      <i class="paw1 fas fa-paw"></i>
-      <i class="paw2 fas fa-paw"></i>
-      <i class="paw1 fas fa-paw"></i>
-      <i class="paw2 fas fa-paw"></i>
-    </div>
-    <div class="box2">
-      <a class="active" href="#home">Home!</a>   
-      <a href="#aboutme">About me!</a>
-      <a href="#projects">Projects!</a>
-      <a href="#contactme">Contact me!</a>       
-    </div>
-  </div>
-  
-
-  <div class="main">
+  <div class="main" id="home">
 
     <!--Big Antonella Pisani-->
     <div id="name" class="name">
@@ -39,8 +23,24 @@
     
 
       <div class="cat1">
-        <img src="cat.png" alt="cat 1">
+        <img src="cat.png" alt="cat">
       </div>
+    </div>
+
+      <!-- navigation bar-->
+  <div class="navbar">
+      <ul class="box1">
+        <li><i class="paw1 fas fa-paw"></i></li>
+        <li><i class="paw2 fas fa-paw"></i></li>
+        <li><i class="paw1 fas fa-paw"></i></li>
+        <li><i class="paw2 fas fa-paw"></i></li>
+      </ul>
+      <ul class="box2">
+        <li><a class="active" href="#home">Home</a></li>   
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactme">Contact</a></li>       
+      </ul>
     </div>
 
   <!--My intro-->
@@ -73,38 +73,48 @@
     </div>
   </div>
 
-
  <!--My projects-->
  <div class="section" id="projects">
     <h2><i class="sectionPaw fas fa-paw"></i> My Projects!</h2>
-    <p id="projects">I began my journey as a web developer and made a few projects.</p>
+    <p>I began my journey as a web developer and made a few projects.</p>
     <p>Check them out!</p>
-    <a href="/tributePage/tribute.html"><img src="tribute.png" class="projectImage"></img></a>
-    <em>Tribute Page</em>
-</div>
+    <div class="projects">
+      <div class="project">
+        <a href="/tributePage/tribute.html"><img src="tribute.png" class="projectImage"></img></a>
+        <p><em>Tribute Page</em></p>
+      </div>
+      <div class="project">
+        <img src="coming.png" class="projectImage"></img>
+        <p><em>Tic-Tac-Toe (React.js)</em></p>
+      </div>
+      <div class="project">
+        <img src="coming.png"  class="projectImage"></img>
+        <p><em>Animation</em></p>
+      </div>
+    </div>
+  </div>
 
 
   <!--Contact Me-->
   <div class="section" id="contactme">
       <h2><i class="sectionPaw fas fa-paw"></i> Contact Me!</h2>
-    </div>
+    
     <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
 
   <!--Form-->
-  <form id="contact" action="mailto:apisaniroa@gmail.com" method="post" class="contact">
-  Name
+  <form action="contact.php" method="post" class="contact" name="contact">
+  <label for="name">Name</label>
   <input type="text" name="name"><br>
-  E-Mail
+  <label for="email">E-Mail</label>
   <input type="text" name="email"><br>
-  Message 
-  </form>
-
+   
+  <label for="email">Message</label>
   <div class ="message">
   <textarea id="message" type="text" name="message" form="contact" rows="10" cols="50"></textarea>
   <br>
   <button id="button" type="submit" name="submit" class="fas fa-paw"> Send</button>
   </div>
-
+</div>
 
 
 

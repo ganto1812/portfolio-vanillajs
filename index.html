@@ -102,18 +102,19 @@
     <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
 
   <!--Form-->
-  <form action="contact.php" method="post" class="contact" name="contact">
-  <label for="name">Name</label>
-  <input type="text" name="name"><br>
-  <label for="email">E-Mail</label>
-  <input type="text" name="email"><br>
-   
-  <label for="email">Message</label>
-  <div class ="message">
-  <textarea id="message" type="text" name="message" form="contact" rows="10" cols="50"></textarea>
-  <br>
-  <button id="button" type="submit" value="submit" name="submit" class="fas fa-paw"> Send</button>
-  </div>
+  <form action="contact.php" onsubmit="return formValidation()" method="post" class="contact" name="contact">
+    <label for="name">Name</label>
+    <input type="text" name="name"><br>
+    <label for="email">E-Mail</label>
+    <input type="text" name="email"><br>
+    
+    <label for="message">Message</label>
+    <div class="message">
+      <textarea id="message" type="text" name="message" form="contact" rows="10" cols="50"></textarea>
+      <br>
+      <button id="button" type="submit" value="submit" name="submit" class="fas fa-paw"> Send</button>
+    </div>
+  </form>
 </div>
 
 

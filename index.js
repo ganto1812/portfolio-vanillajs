@@ -2,7 +2,7 @@ function formValidation()
 {
     var name = document.forms["contact"]["name"];              
     var email = document.forms["contact"]["email"];   
-    var message = document.forms["contact"]["message"]; 
+    var message = document.getElementById("message"); 
   
     if (name.value == "")                                 
     {

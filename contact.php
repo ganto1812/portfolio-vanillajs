@@ -1,30 +1,33 @@
 <?php
-
-if(!isset($_POST["submit"]))
+$errors = '';
+$myemail = 'apisaniroa@gmail.com';
+if(empty($_POST['name'])  ||
+   empty($_POST['email']) ||
+   empty($_POST['message']))
 {
-//please submit
-    echo "error; please submit your message";
+    $errors .= "\n Error: all fields are required";
 }
-$name = $_POST["name"];
-$visitor_email = $_POST["email"];
-$message = $_POST["message"];
-
-//Validation
-if(empty($name))||empty($visitor_email))
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+$email_address))
 {
-    echo "Please write your name and email";
-    exit;
+    $errors .= "\n Error: Invalid email address";
 }
 
-$email_from = "apisaniroa@gmail.com";
-$email_subject = "New message!";
-$email_body = "Name: $name\n".
-"E-mail: $visitor_email\n".
-"Message:\n $message".
-
-$to = "apisaniroa@gmail.com";
-$headers = "From: $email_from \r\n";
-
-//send email
+if( empty($errors))
+{
+$to = $myemail;
+$email_subject = "Contact form from: $name";
+$email_body = "New message from your website!".
+" Here are the details:\n Name: $name \n ".
+"Email: $email_address\n Message \n $message";
+$headers = "From: $myemail\n";
+$headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
+//redirect to the 'thank you' page
+header('Location: thankYou.html');
+}
 ?>

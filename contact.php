@@ -1,52 +1,73 @@
-<?php 
-$errors = '';
-$myemail = 'apisaniroa@gmail.com';
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['message']))
+<?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+
+//need to submit form first
+if(!isset($_POST['submit']))
 {
-    $errors .= "\n Error: all fields are required";
+	echo "error; you need to submit the form!";
 }
 
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['message']; 
+//get variables
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email_address))
+
+//Validation
+if(empty($name)||empty($visitor_email)) 
 {
-    $errors .= "\n Error: Invalid email address";
+    echo "Name and email are mandatory!";
+    exit;
 }
 
-if( empty($errors))
+if(IsInjected($visitor_email))
 {
-	$to = $myemail; 
-	$email_subject = "Contact form from: $name";
-	$email_body = "New message from website!".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
-	
+    echo "Bad email value!";
+    exit;
+}
+
+
+//composed email
+	$email_from = "apisaniroa@gmail.com";
+	$email_subject = "New message from website";
+	$email_body = "You have received a new message from:\n $name.\n".
+	"E-mail: $visitor_email.\n".
+    "Here is the message:\n $message\n".
+
+
+//send email
+	$to = "apisaniroa@gmail.com";
+	$headers = "From: $email_from \r\n";
+	$headers .= "Reply-To: $visitor_email \r\n";
 	mail($to,$email_subject,$email_body,$headers);
 
-	//redirect to 'thank you' page
-	header('Location: contact-form-thank-you.html');
-} 
+//thank you
+header('Location: thankYou.html');	
+
+
+//email injection
+	function IsInjected($str)
+	{
+		$injections = array('(\n+)',
+			   '(\r+)',
+			   '(\t+)',
+			   '(%0A+)',
+			   '(%0D+)',
+			   '(%08+)',
+			   '(%09+)'
+			   );
+				   
+		$inject = join('|', $injections);
+		$inject = "/$inject/i";
+		
+		if(preg_match($inject,$str))
+		{
+		  return true;
+		}
+		else
+		{
+		  return false;
+		}
+	}
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Contact form handler</title>
-</head>
-
-<body>
-<!-- Error page -->
-<?php
-echo nl2br($errors);
-?>
-
-
-</body>
-</html>

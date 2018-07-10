@@ -5,7 +5,7 @@ body {
 .navbar {
   font-size: 1.3rem;
   font-weight: 800;
-  background-color: #adadad;
+  background-color: rgb(141, 204, 219);
   display: flex;
   overflow: hidden;
   position: sticky;
@@ -13,16 +13,18 @@ body {
 }
 
 ul {
-  padding: 0 10px;
   list-style: none;
   display: flex;
-  margin: 6px; 
+  margin: 0px; 
 }
 
 .box1 {
-  width: 40%;
-  color: #414141;
-  letter-spacing: 40px;
+  margin: auto;
+}
+
+.miniSpade {
+  height: 30px;
+  padding: 0 20px;
 }
 
 .box2 {
@@ -32,7 +34,7 @@ ul {
 .box2 a {
   color: white; 
   text-decoration: none;
-  padding: 6px 30px;
+  padding: 0 40px;
 }
 
 .box2 a:hover {
@@ -40,29 +42,29 @@ ul {
 }
 
 .active {
-  background-color: #527a7a;
+  background-color: #0088aaff;
 }
 
 
 .name {
   display: block;
   font-size: 1.5vw;
-  color: #8f8f8f;
+  color: #646464;
   line-height: 0.15;
   padding: 6% 8% 2%;
-  text-shadow: 0.1vw 0.1vw #262626
+  text-shadow: 0.1vw 0.1vw #262626;
 }
 
 div h1::first-letter {
   font-size: 6vw;
 }
 
-.cat1 img {
+.bigSpade img {
   display: block;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: -10%; 
   height: 8vw;
-  z-index: -1;
+  color: #0088aaff;
 }
 
 .section {
@@ -71,9 +73,8 @@ padding-top: 250px;
 text-align: center;
 }
 
-.sectionPaw {
-  color: #527a7a;
-  font-size: 60px;
+.sectionSpade {
+  height: 100px;
 }
 
 #profile {
@@ -110,7 +111,7 @@ p {
 .projectImage {
   margin: auto;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 2%;
 }
 
 em {
@@ -134,6 +135,8 @@ input {
   margin: auto auto;
   border-radius: 10px; 
   padding: 10px;
+}
+#button {
   margin-bottom: 200px;
 }
 

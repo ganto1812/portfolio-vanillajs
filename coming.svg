@@ -49,60 +49,19 @@
        x2="1406.662"
        y2="1045.18"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
+    <filter
        inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2291"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2293"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2295"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2297"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2299"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2283"
-       id="linearGradient2301"
-       gradientUnits="userSpaceOnUse"
-       x1="596.57231"
-       y1="1045.18"
-       x2="1406.662"
-       y2="1045.18" />
+       style="color-interpolation-filters:sRGB"
+       id="filter915"
+       x="-1.9652408"
+       width="4.9304815"
+       y="-0.86368976"
+       height="2.7273795">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1589.0331"
+         id="feGaussianBlur917" />
+    </filter>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -119,13 +78,20 @@
      showgrid="false"
      inkscape:zoom="0.19272727"
      inkscape:cx="960"
-     inkscape:cy="2822.6415"
+     inkscape:cy="2366.0492"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg815" />
   <rect
-     style="opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:30.23622131;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     style="opacity:1;fill:#8dccdb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.93441582;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect923"
+     width="1940.566"
+     height="4415.5669"
+     x="0"
+     y="-5.1886792" />
+  <rect
+     style="opacity:1;fill:#8dccdb;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:30.23622131;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;filter:url(#filter915)"
      id="rect2289"
      width="1940.566"
      height="4415.5664"
@@ -134,19 +100,33 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot825"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;opacity:0.98000004;fill:url(#linearGradient2301);fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;opacity:0.98000004;fill:#0088aa;fill-opacity:1;stroke:none;"
      transform="matrix(1.8006294,0,0,3.5040962,-823.81226,-1626.1963)"><flowRegion
        id="flowRegion827"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient2293);fill-opacity:1"><rect
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#0088aa;fill-opacity:1;"><rect
          id="rect829"
          width="1120.7548"
          height="3014.6226"
          x="435.84906"
          y="819.81134"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient2291);fill-opacity:1" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#0088aa;fill-opacity:1;" /></flowRegion><flowPara
        id="flowPara831"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient2295);fill-opacity:1">COMING </flowPara><flowPara
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0088aa;fill-opacity:1;">COMING </flowPara><flowPara
        id="flowPara833"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient2297);fill-opacity:1">SOON</flowPara><flowPara
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient2299);fill-opacity:1"
-       id="flowPara835" /></flowRoot></svg>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0088aa;fill-opacity:1;">SOON</flowPara><flowPara
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:191.9990387px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0088aa;fill-opacity:1;"
+       id="flowPara835" /></flowRoot>  <rect
+     style="opacity:1;fill:#786721;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:30.23622131;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect919"
+     width="2360.8491"
+     height="2480.1887"
+     x="0"
+     y="-5.1886792" />
+  <rect
+     style="opacity:1;fill:#786721;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:30.23622131;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect921"
+     width="1940.566"
+     height="4415.5664"
+     x="0"
+     y="-5.1886792" />
+</svg>

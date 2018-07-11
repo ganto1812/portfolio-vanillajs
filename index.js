@@ -1,8 +1,21 @@
+// Click active tab
+let navbar = document.getElementById("box2");
+let tab = navbar.getElementsByClassName("tab");
+for (let i = 0; i < tab.length; i++) {
+  tab[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+// Form validation
 function formValidation()                                   
 {
-    var name = document.forms["contact"]["name"];              
-    var email = document.forms["contact"]["email"];   
-    var message = document.forms["contact"]["message"];
+    let name = document.forms["contact"]["name"];              
+    let email = document.forms["contact"]["email"];   
+    let message = document.forms["contact"]["message"];
 
     if (name.value == "")                                 
     {

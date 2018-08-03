@@ -111,7 +111,9 @@ p {
 .projectImage {
   margin: auto;
   width: 200px;
+  height: 458px;
   border-radius: 1%;
+  border: solid black;
 }
 
 em {

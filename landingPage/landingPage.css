@@ -1,0 +1,26 @@
+
+.header {
+    grid-area: hd;
+}
+
+.side {
+    grid-area: sd;
+}
+
+.main {
+    grid-area: mn;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'sd mn mn mn sd'
+    'ft ft ft ft ft';
+    grid-gap: 10px;
+    padding: 10px;
+}

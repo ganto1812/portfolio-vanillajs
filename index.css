@@ -136,10 +136,13 @@ input {
   display: block;
   margin: auto auto;
   border-radius: 10px; 
-  padding: 10px;
+  padding: 20px;
+  font-family: arial;
 }
 #button {
   margin-bottom: 200px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 button:hover {
@@ -195,8 +198,12 @@ button:hover {
     flex-wrap: wrap;
     flex-direction: column;
   }
- .projectImage{
-  width: 50px;
+ .projectImage {
+  height: 30vw;
+  width: 20vw;
  }
 
+ .message {
+width: 300px;
+ }
 }

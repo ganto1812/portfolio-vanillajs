@@ -160,23 +160,21 @@ button:hover {
     margin: 0;
     width: 100%;
   }
-
+  
   .head {
     padding: 50px;
   }
-
+  
   .bigSpade img {
     left: 200px;
   }
-
+  
   .navbar {
     display: flex;
     width: 100%;
-    top: -1px;
-    column-count: 2;
-    column-fill: balance;
+    font-size: 0.6em;
   }
-
+  
   .box1 {
    display: none; 
   }
@@ -184,19 +182,22 @@ button:hover {
   ul {
     display: flex;
     float: left;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     font-size: 1em;
     padding: 0;
   }
-
-  ul a {
-  padding: 10px 30px;
+  li {
+    padding: 0;
   }
-
+  
+  ul a {
+    padding: 10px 30px;
+  }
+  
   .section {
     font-size: 1em;
+    padding: 10px 0;
   }
 
   .sectionSpade {
@@ -210,19 +211,46 @@ button:hover {
   }
   
   .introImage {
-    margin: 50px 0;
+    height: 50px;
+    margin: 20px 0;
   }
-
+  
   .projects {
     flex-wrap: wrap;
     flex-direction: column;
   }
- .projectImage {
-  height: 30vw;
-  width: 20vw;
+  .project {
+    margin: 10px 0;
+  }
+  .projectImage {
+   position: relative;
+    height: 30vw;
+    width: 20vw;
  }
 
- .message {
-width: 300px;
+ .hiddenImage {
+  position:relative;
+  left: -10px;
+  height: 30vw;
+  width: 20vw;
+  /-webkit-transition: opacity 1s ease-in-out;
+  /-moz-transition: opacity 1s ease-in-out;
+  /-o-transition: opacity 1s ease-in-out;
+  /transition: opacity 1s ease-in-out;
  }
+ .projectImage:hover {
+  opacity:0;
+ }
+
+ .contact {
+   font-size: 15px;
+ }
+ .message {
+  width: 200px;
+  height: 80px;
+ }
+
+  span {
+    font-size: 10px;
+  }
 }

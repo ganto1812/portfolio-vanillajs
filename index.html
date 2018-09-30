@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <meta charset="utf-8">
@@ -28,43 +28,36 @@
       </div>
     </div>
 
-      <!-- navigation bar-->
+    <!-- navigation bar-->
     <div class="navbar">
-      <span class="box1">
-        <img src="spadeonly.svg" class="navbarSpades">
-        <img src="spadeonly.svg" class="navbarSpades">
-        <img src="spadeonly.svg" class="navbarSpades">
-        <img src="spadeonly.svg" class="navbarSpades">
-      </span>
-      <ul class="box2" id="box2">
-        <li><a href="#home" class="tab active">Home</a></li>   
+      <ul>
+        <li><a href="#home" class="tab active">Home</a></li>
         <li><a href="#aboutme" class="tab">About</a></li>
         <li><a href="#projects" class="tab">Projects</a></li>
-        <li><a href="#contactme" class="tab">Contact</a></li>       
+        <li><a href="#contactme" class="tab">Contact</a></li>
       </ul>
     </div>
 
     <!--My intro-->
     <div class="section" id="aboutme">
       <h1><img src="spadeonly.svg" class="sectionSpade"> About Me!</h1>
-    <img id="profile" src="me.jpg" alt="Picture of myself" class="circleImage">
+      <img id="profile" src="me.jpg" alt="Picture of myself">
 
-    <div class="intro">
-      <p>Hi!</p>
-      <p>My name is Antonella and I'm a passionate web developer and designer.</p>
-
-      <img src="globe.jpg" alt="globe" class="circleImage">
-      <p>I've lived in different parts of the world and had the chance to learn about other cultures and languages.</p>
-
-      <img src="pc.svg" alt="picture of my pc" class="circleImage">
-
-      <p>Some of the programs I use everyday include:</p>
-      
-      <img src="csshtml.png" alt="css and html" class="circleImage">
-      <br>
-      <img src="javascript.jpg" alt="javascript" class="circleImage">
-
-      <p>Some of the libraries I use are:</p>
+      <div class="intro">
+        <p>Hi!</p>
+        <p>My name is Antonella and I'm a passionate web developer and designer.</p>
+        <img src="globe.jpg" alt="globe" class="introImage">
+        <p>I've lived in different parts of the world and had the chance to learn about other cultures and languages.</p>
+        <img src="pc.svg" alt="picture of my pc" class="introImage">
+        <p>Some of the languages I use include:</p>
+        <img src="csshtml.png" alt="css and html" class="introImage">
+        <img src="javascript.jpg" alt="javascript" class="introImage">
+        <p>Some of the libraries I use are:</p>
+        <img src="jquery.png" alt="jquery" class="introImage">
+        <br>
+        <img src="reactjs.png" alt="React JS" class="introImage">
+        <p>And frameworks:</p>
+        <img src="bootstrap.jpg" alt="Bootstrap" class="introImage">
       </div>
     </div>
 
@@ -83,7 +76,7 @@
           <p><em>To do App</em></p>
         </div>
         <div class="project">
-          <a href="/drums/drums.html"><img src="drum.png"  class="projectImage"></a>
+          <a href="/drums/drums.html"><img src="drum.png" class="projectImage"></a>
           <p><em>Drum Set</em></p>
         </div>
       </div>
@@ -92,37 +85,38 @@
 
     <!--Contact Me-->
     <div class="section" id="contactme">
-        <h1><img src="spadeonly.svg" class="sectionSpade"> Contact Me!</h1>
-      
+      <h1><img src="spadeonly.svg" class="sectionSpade"> Contact Me!</h1>
+
       <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
 
-  <!--Form-->
-  <form method="post" name="contact" action="contact.php"onsubmit="return formValidation()" class="contact" id="contact">
-    <label for='name'>Name</label>
-    <input type="text" name="name">
-    <br>
-    <label for='email'>E-Mail</label>
-    <input type="text" name="email">
-    <br>
-    <label for='message'>Message</label>
-    <textarea name="message" class="message" rows="10" cols="50" form="contact"></textarea>
-    <br>
-    <button id="button" type="submit" name='submit' value="submit" class="fas fa-paper-plane"> Send</button>
-  </form>
-</div>
-<footer>
-  <span style="float:right;font-family:arial">All Rights Reserved ©
-  <script> 
-    document.write(new Date().getFullYear())
-  </script>
-  </span>
-</footer>
-<br><br><br>
-
+      <!--Form-->
+      <form method="post" name="contact" action="contact.php" onsubmit="return formValidation()" class="contact" id="contact">
+        <label for='name'>Name</label>
+        <input type="text" name="name">
+        <br>
+        <label for='email'>E-Mail</label>
+        <input type="text" name="email">
+        <br>
+        <label for='message'>Message</label>
+        <textarea name="message" class="message" rows="10" cols="50" form="contact"></textarea>
+        <br>
+        <button id="button" type="submit" name='submit' value="submit" class="fas fa-paper-plane"> Send</button>
+      </form>
+    </div>
+    <footer>
+      <span style="float:right;font-family:arial">All Rights Reserved ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+      </span>
+    </footer>
+    <br><br><br>
+  </div>
 
   <!--Scripts-->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b059eaa21635158"></script>
   <script type="text/javascript" src="index.js"></script>
+
 </body>
 
 </html>

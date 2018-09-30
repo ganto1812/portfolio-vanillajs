@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Indie Flower", cursive;
   text-align: center;
+  color: rgb(55, 55, 55);
 }
 
 .head {
@@ -35,12 +36,10 @@ body {
 .navbar {
   font-size: 1.2rem;
   font-weight: 800;
-  background-color: rgb(141, 204, 219);
-  display: flex;
+  background-image: linear-gradient(0deg, #0088aaff, #8dccdbff);
   overflow: hidden;
   position: sticky;
   top: 0;
-  margin-top: 00px;
 }
 
 .box1 {
@@ -52,24 +51,24 @@ body {
   padding: 0 1.5em;
 }
 
-.box2 {
-  margin-left: auto;
+ul {
   list-style: none;
   display: flex;
   margin: 0px;
+  float: right;
 }
 
-.box2 li {
-padding: 10px 0;
+ul li {
+  padding: 5px 0;
 }
 
-.box2 a {
+ul a {
   color: white; 
   text-decoration: none;
   padding: 20px  40px;
 }
 
-.box2 a:hover {
+ul a:hover {
   background-color: #414141;
 }
 
@@ -95,11 +94,12 @@ padding: 100px 0;
 
 p {
   font-size: 25px;
+  margin: 20px;
 }
 
-.circleImage {
-  width: 200px;
-  margin-top: 100px;
+.introImage {
+  height: 150px;
+  margin: 50px 0;
 }
 
 .projects {
@@ -158,48 +158,59 @@ button:hover {
 
   body {
     margin: 0;
-    width: 106%;
+    width: 100%;
+  }
+
+  .head {
+    padding: 50px;
+  }
+
+  .bigSpade img {
+    left: 200px;
   }
 
   .navbar {
     display: flex;
     width: 100%;
     top: -1px;
+    column-count: 2;
+    column-fill: balance;
   }
 
   .box1 {
    display: none; 
   }
 
-  .box2 {
+  ul {
     display: flex;
     float: left;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 1em;
     padding: 0;
   }
 
-  .box2 a {
-  padding: 20px 5vw;
+  ul a {
+  padding: 10px 30px;
   }
 
   .section {
-    font-size: 6vw;
+    font-size: 1em;
   }
 
   .sectionSpade {
     display: flex;
     margin: auto;
-    width: 10%;
+    width: 1em;
   }
 
   p {
-    font-size: 15px;
+    font-size: 1em;
   }
   
-  .circleImage {
-    margin-top: 80px;
+  .introImage {
+    margin: 50px 0;
   }
 
   .projects {

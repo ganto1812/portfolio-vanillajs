@@ -229,7 +229,7 @@ button:hover {
  }
 
  .hiddenImage {
-  position:relative;
+  position: absolute;
   left: -10px;
   height: 30vw;
   width: 20vw;

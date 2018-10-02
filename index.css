@@ -105,6 +105,7 @@ p {
 .projects {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
  }
 
 .project {
@@ -115,10 +116,14 @@ p {
 
 .projectImage {
   margin: auto;
-  width: 200px;
-  height: 458px;
+  width: 100px;
   border-radius: 1%;
-  border: solid black;
+  border: solid rgb(206, 206, 206);
+  -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+}
+.projectImage:hover {
+width: 150px;
 }
 
 em {
@@ -137,28 +142,32 @@ input {
 
 .message {
   display: block;
-  margin: auto auto;
+  margin: 5px auto;
   border-radius: 10px; 
-  padding: 20px;
   font-family: arial;
 }
-#button {
-  margin-bottom: 200px;
+button {
+  color: #414141;
+  margin-bottom: 50px;
   border-radius: 5px;
+  font-size: 15px;
   padding: 10px;
+  -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: padding 0.5s;
 }
 
 button:hover {
-  background-color: #404040;
+  background-color: #7c7c7c;
+  padding: 16px;  
   color: white;
 }
 
 
-@media (max-width: 970px) {
+@media (max-padding: 970px) {
 
   body {
     margin: 0;
-    width: 100%;
+    padding: 100%;
   }
   
   .head {
@@ -171,7 +180,7 @@ button:hover {
   
   .navbar {
     display: flex;
-    width: 100%;
+    padding: 100%;
     font-size: 0.6em;
   }
   
@@ -182,7 +191,7 @@ button:hover {
   ul {
     display: flex;
     float: left;
-    width: 100%;
+    padding: 100%;
     justify-content: center;
     font-size: 1em;
     padding: 0;
@@ -203,7 +212,7 @@ button:hover {
   .sectionSpade {
     display: flex;
     margin: auto;
-    width: 1em;
+    padding: 1em;
   }
 
   p {
@@ -225,14 +234,14 @@ button:hover {
   .projectImage {
    position: relative;
     height: 30vw;
-    width: 20vw;
+    padding: 20vw;
  }
 
  .hiddenImage {
   position: absolute;
   left: -10px;
   height: 30vw;
-  width: 20vw;
+  padding: 20vw;
   /-webkit-transition: opacity 1s ease-in-out;
   /-moz-transition: opacity 1s ease-in-out;
   /-o-transition: opacity 1s ease-in-out;
@@ -246,7 +255,7 @@ button:hover {
    font-size: 15px;
  }
  .message {
-  width: 200px;
+  padding: 200px;
   height: 80px;
  }
 

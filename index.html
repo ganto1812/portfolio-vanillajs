@@ -92,17 +92,17 @@
       <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
 
       <!--Form-->
-      <form method="post" name="contact" action="/contact.php" onsubmit="return formValidation(), formFunction" class="contact" id="contact">
+      <form method="post" name="contact" action="/contact.php" onsubmit="return formValidation()" class="contact" id="contact">
         <label for='name'>Name</label>
-        <input type="text" name="name" placeholder="name">
+        <input type="text" name="name">
         <br>
         <label for='email'>E-Mail</label>
-        <input type="text" name="email" placeholder="email">
+        <input type="text" name="email">
         <br>
         <label for='message'>Message</label>
-        <textarea name="text" class="message" placeholder="Message" rows="10" cols="50" form="contact"></textarea>
+        <textarea name="text" class="message" rows="10" cols="50" form="contact"></textarea>
         <br>
-        <button id="js_send" type="submit" name='submit' value="send" class="fas fa-paper-plane"> Send</button>
+        <button id="button" type="submit" name='submit' value="send" class="fas fa-paper-plane"> Send</button>
       </form>
     </div>
     <footer>

@@ -83,6 +83,7 @@ padding: 100px 0;
 
 .sectionSpade {
   height: 60px;
+  border: black;
 }
 
 #profile {
@@ -237,17 +238,16 @@ button:hover {
     padding: 20vw;
  }
 
- /* .hiddenImage {
+ .hiddenImage {
   position: absolute;
   left: -10px;
   height: 30vw;
   padding: 20vw;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
- } */
- 
+  /-webkit-transition: opacity 1s ease-in-out;
+  /-moz-transition: opacity 1s ease-in-out;
+  /-o-transition: opacity 1s ease-in-out;
+  /transition: opacity 1s ease-in-out;
+ }
  .projectImage:hover {
   opacity:0;
  }

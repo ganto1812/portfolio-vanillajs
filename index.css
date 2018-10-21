@@ -174,7 +174,7 @@ button:hover {
   }
 
   .navbar {
-    font-size: 0.6em;
+    font-size: 1.5em;
     display: flex;
   }
 
@@ -187,7 +187,7 @@ button:hover {
   }
 
   ul a {
-    padding: 10px 8vw;
+    padding: 10px 3vw;
   }
 
   #profile {

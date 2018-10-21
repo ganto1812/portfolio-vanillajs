@@ -20,7 +20,7 @@ $(window).on("scroll", function() {
     var top = $(this).offset().top - nav_height,
       bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
-      console.log(this.getElementsByClassName("sectionSpade"));
+      // console.log(this.getElementsByClassName("sectionSpade"));
       // this.getElementById("sectionSpade").classList.remove("spadeAnimation");
       nav.find("a").removeClass("active");
       nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");

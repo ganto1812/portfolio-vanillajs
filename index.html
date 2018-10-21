@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-  <script>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#efefef",
-        "text": "#404040"
-      },
-      "button": {
-        "background": "#0088aaff",
-        "text": "#ffffff"
-      }
-    },
-    "theme": "edgeless"
-  })});
-  </script>
+
 <head>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -26,8 +10,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <title> Portfolio
   </title>
+
 </head>
 
 <body>
@@ -58,7 +44,7 @@
 
     <!--My intro-->
     <div class="section" id="aboutme">
-      <h1><img src="spadeonly.svg" class="sectionSpade"> About Me!</h1>
+      <h1><img src="spadeonly.svg" id="sectionSpade" class="sectionSpade spadeAnimation"> About Me!</h1>
       <img id="profile" src="me.jpg" alt="Picture of myself">
 
       <div class="intro">
@@ -81,7 +67,7 @@
 
     <!--My projects-->
     <div class="section" id="projects">
-      <h1><img src="spadeonly.svg" class="sectionSpade"> My Projects!</h1>
+      <h1><img src="spadeonly.svg" id="sectionSpade" class="sectionSpade"> My Projects!</h1>
       <p>Here are some of my projects.</p>
       <p>Take a look!</p>
       <div class="projects">
@@ -105,20 +91,20 @@
 
     <!--Contact Me-->
     <div class="section" id="contactme">
-      <h1><img src="spadeonly.svg" class="sectionSpade"> Contact Me!</h1>
+      <h1><img src="spadeonly.svg" id="sectionSpade" class="sectionSpade"> Contact Me!</h1>
 
       <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
 
       <!--Form-->
       <form method="post" name="contact" action="/contact.php" onsubmit="return formValidation()" class="contact" id="contact">
         <label for='name'>Name</label>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
         <br>
         <label for='email'>E-Mail</label>
-        <input type="text" name="email">
-        <br>
+        <input type="text" name="email" required>
+        <br><br>
         <label for='message'>Message</label>
-        <textarea name="text" class="message" rows="10" cols="50" form="contact"></textarea>
+        <textarea name="text" class="message" rows="10" cols="50" form="contact" required></textarea>
         <br>
         <button id="button" type="submit" name='submit' value="send" class="fas fa-paper-plane"> Send</button>
       </form>
@@ -136,6 +122,7 @@
   <!--Scripts-->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b059eaa21635158"></script>
   <script type="text/javascript" src="index.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 
 </body>
 

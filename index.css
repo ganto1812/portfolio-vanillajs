@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Indie Flower", cursive;
@@ -6,8 +10,8 @@ body {
 }
 
 .head {
-  padding: 50px 150px;
-  height: 60px;
+  padding: 50px 150px 100px;
+  height: 0px;
   right: 300px;
 }
 .name {
@@ -28,7 +32,7 @@ body {
 .bigSpade img {
   display: block;
   position: absolute;
-  left: 300px; 
+  left: 300px;
   height: 80px;
   color: #0088aaff;
 }
@@ -40,10 +44,6 @@ body {
   overflow: hidden;
   position: sticky;
   top: 0;
-}
-
-.box1 {
-  margin: auto;
 }
 
 .navbarSpades {
@@ -63,9 +63,9 @@ ul li {
 }
 
 ul a {
-  color: white; 
+  color: white;
   text-decoration: none;
-  padding: 20px  40px;
+  padding: 20px 40px;
 }
 
 ul a:hover {
@@ -77,12 +77,16 @@ ul a:hover {
 }
 
 .section {
-font-size: 30px;
-padding: 100px 0;
+  font-size: 30px;
+  padding: 100px 0;
 }
 
 .sectionSpade {
   height: 60px;
+  transition: 1s;
+}
+.spadeAnimation {
+  transform: rotateY(180deg);
 }
 
 #profile {
@@ -106,7 +110,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
- }
+}
 
 .project {
   display: block;
@@ -123,7 +127,7 @@ p {
   transition: width 0.5s;
 }
 .projectImage:hover {
-width: 150px;
+  width: 150px;
 }
 
 em {
@@ -136,94 +140,81 @@ em {
 }
 
 input {
-  margin: 10px;
-  padding: 15px;
+  margin: 20px;
+  padding: 5px;
 }
 
 .message {
   display: block;
-  margin: 5px auto;
-  border-radius: 10px; 
+  margin: 20px auto;
+  border-radius: 10px;
   font-family: arial;
 }
 button {
-  color: #414141;
-  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  background-color: #0088aaff;
+  margin: 50px auto 200px;
   border-radius: 5px;
   font-size: 15px;
-  padding: 10px;
+  padding: 10px 30px;
   -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
   transition: padding 0.5s;
 }
 
 button:hover {
-  background-color: #7c7c7c;
-  padding: 16px;  
+  background-color: rgb(0, 99, 124);
+  padding: 10px 50px;
   color: white;
 }
 
-
-@media (max-padding: 970px) {
-
-  body {
-    margin: 0;
-    padding: 100%;
-  }
-  
-  .head {
-    padding: 50px;
-  }
-  
+/* Phone responsive */
+@media screen and (max-width: 970px) {
   .bigSpade img {
-    left: 200px;
+    left: 50px;
   }
-  
+
   .navbar {
-    display: flex;
-    padding: 100%;
     font-size: 0.6em;
-  }
-  
-  .box1 {
-   display: none; 
+    display: flex;
   }
 
   ul {
-    display: flex;
-    float: left;
-    padding: 100%;
-    justify-content: center;
-    font-size: 1em;
     padding: 0;
+    margin: 0 auto;
   }
   li {
     padding: 0;
   }
-  
+
   ul a {
-    padding: 10px 30px;
+    padding: 10px 8vw;
   }
-  
+
+  #profile {
+    width: 8em;
+  }
+
   .section {
     font-size: 1em;
     padding: 10px 0;
+    margin: 30px auto;
   }
 
   .sectionSpade {
     display: flex;
-    margin: auto;
-    padding: 1em;
+    margin: 0 auto;
+    height: 20px;
   }
 
   p {
     font-size: 1em;
   }
-  
+
   .introImage {
     height: 50px;
     margin: 20px 0;
   }
-  
+
   .projects {
     flex-wrap: wrap;
     flex-direction: column;
@@ -232,12 +223,13 @@ button:hover {
     margin: 10px 0;
   }
   .projectImage {
-   position: relative;
+    position: relative;
     height: 30vw;
-    padding: 20vw;
- }
+    width: 20vw;
+    z-index: -1;
+  }
 
- /* .hiddenImage {
+  /* .hiddenImage {
   position: absolute;
   left: -10px;
   height: 30vw;
@@ -247,20 +239,23 @@ button:hover {
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
  } */
- 
- .projectImage:hover {
-  opacity:0;
- }
 
- .contact {
-   font-size: 15px;
- }
- .message {
-  padding: 200px;
-  height: 80px;
- }
+  .projectImage:hover {
+    opacity: 0;
+  }
 
-  span {
+  .contact {
+    font-size: 15px;
+  }
+  .message {
+    width: 200px;
+    height: 80px;
+  }
+  button:hover {
+    padding: 10px 50px;
+  }
+
+  footer span {
     font-size: 10px;
   }
 }

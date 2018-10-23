@@ -38,12 +38,12 @@ body {
 }
 
 .navbar {
-  font-size: 1.2rem;
   font-weight: 800;
   background-image: linear-gradient(0deg, #0490b3, #8dccdbff);
   overflow: hidden;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbarSpades {
@@ -64,6 +64,7 @@ ul li {
 
 ul a {
   color: white;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 20px 40px;
 }
@@ -226,7 +227,6 @@ button:hover {
     position: relative;
     height: 30vw;
     width: 20vw;
-    z-index: -1;
   }
 
   /* .hiddenImage {

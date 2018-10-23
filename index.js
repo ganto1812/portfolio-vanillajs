@@ -9,15 +9,15 @@ for (let i = 0; i < tab.length; i++) {
   });
 }
 //Scroll active tab
-var sections = $(".section"),
+let sections = $(".section"),
   nav = $("nav"),
   nav_height = nav.outerHeight();
 
 $(window).on("scroll", function() {
-  var cur_pos = $(this).scrollTop();
+  let cur_pos = $(this).scrollTop();
 
   sections.each(function() {
-    var top = $(this).offset().top - nav_height,
+    let top = $(this).offset().top - nav_height,
       bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
       // console.log(this.getElementsByClassName("sectionSpade"));
@@ -29,8 +29,12 @@ $(window).on("scroll", function() {
   });
 });
 
-// Cookies
+//After load
 window.addEventListener("load", function() {
+  $("#header").animate({ opacity: 1 }, 1000, function() {
+    $("#bigSpade").addClass("rotation");
+  });
+  // Cookies
   window.cookieconsent.initialise({
     palette: {
       popup: {

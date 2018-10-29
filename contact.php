@@ -29,15 +29,15 @@ if(IsInjected($visitor_email))
 
 
 //composed email
-	$email_from = "apisaniroa@gmail.com";
+	$email_from = "info@antonellapisani.co.uk";
 	$email_subject = "New message from website";
-	$email_body = "You have received a new message from:\n $name.\n".
-	"E-mail: $visitor_email.\n".
-    "Here is the message:\n $message\n".
+	$email_body = "You have received a new message from: $name.\n\n".
+	"E-mail: $visitor_email.\n\n".
+    "Here is the message:\n $message\n\n".
 
 
 //send email
-	$to = "apisaniroa@gmail.com";
+	$to = "info@antonellapisani.co.uk";
 	$headers = "From: $email_from \r\n";
 	$headers .= "Reply-To: $visitor_email \r\n";
 	mail($to,$email_subject,$email_body,$headers);

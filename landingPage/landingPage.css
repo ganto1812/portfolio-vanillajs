@@ -1,3 +1,10 @@
+:root {
+  --whiteBlue: #cbe4fa;
+  --lightBlue: #6c98c2;
+  --niceBlue: #005385;
+  --darkBlue: #0b2545;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,22 +12,22 @@
 }
 
 body {
-  background-image: linear-gradient(#005385, #0b2545);
+  background-image: linear-gradient(90deg, var(--niceBlue), var(--darkBlue));
   background-repeat: no-repeat;
   font-family: "Trebuchet MS";
 }
 
 nav {
-  background-color: #a4bbd1;
+  background-color: var(--whiteBlue);
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid #859eb4;
+  border: 1px solid var(--niceBlue);
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
@@ -30,52 +37,76 @@ ul {
   display: inline-block;
 }
 
-li {
+nav li {
   list-style-type: none;
   font-size: 20px;
   font-weight: 800;
 }
 
-li a {
+nav li a {
   padding: 25px 30px;
   text-decoration: none;
-  color: #005385;
+  color: var(--niceBlue);
 }
 
 li a:hover {
-  color: #e8f1f2;
-  background-color: rgb(238, 244, 237, 0.1);
+  color: whitesmoke;
+  background-color: var(--lightBlue);
 }
 
-.container {
-  display: inline-block;
+.about,
+.content {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  color: #8da9c4;
-  margin: 80px 5vw;
+  color: var(--lightBlue);
+  padding: 100px 150px;
   align-items: center;
-}
-h1 {
-  color: #0b2545;
 }
 
 .leftSide,
 .rightSide {
-  flex-basis: 20%;
-  margin: 0 30px;
+  margin: 40px;
+  flex: 1 0 200px;
+}
+.center {
+  flex: 2 2 500px;
+}
+iframe {
+  width: 30vw;
+  height: 17vw;
+  overflow: auto;
 }
 
+h1,
+h2 {
+  color: var(--whiteBlue);
+  margin-bottom: 30px;
+}
+p {
+  margin: 30px;
+}
+span {
+  color: var(--whiteBlue);
+}
+.content li {
+  list-style-type: none;
+}
 .bigMessage {
   font-size: 3em;
-  text-shadow: 2px 2px 10px rgb(24, 24, 24);
+  text-shadow: 3px 3px 20px black;
 }
 
 form {
+  width: 300px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.15);
   padding: 20px;
 }
 input {
   display: block;
   margin: 10px auto;
+  padding: 5px;
 }
 button {
   display: block;
@@ -83,12 +114,12 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: #ff7021;
+  background-color: #d45009;
   color: #eef4ed;
   font-weight: 700;
   font-size: 15px;
-  width: 50%;
-  border-radius: 10px;
+  width: 80%;
+  border-radius: 5px;
 }
 
 .media {
@@ -99,6 +130,14 @@ button {
 .media:hover {
   fill: #0b2545;
 }
-
-footer {
+.content h1,
+hr {
+  width: 100%;
+}
+.subContent {
+  flex: 1 1 50px;
+  margin: 50px;
+}
+.subContent img {
+  height: 200px;
 }

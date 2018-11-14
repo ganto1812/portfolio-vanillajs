@@ -1,132 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="icon" href="images/spade.ico" type="image/gif" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Web developer / Front End Deveoper based in Poole"
+    />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Antonella Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <link rel="icon" href="images/spade.ico" type="image/gif" sizes="16x16">
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <meta charset="utf-8">
-  <meta name="description" content="Web developer / Front End Deveoper based in Poole">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="Antonella Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Deveoper Poole</title>
+  </head>
 
-  <title> Web Deveoper Poole
-  </title>
+  <body>
+    <div class="main" id="home">
+      <header class="header" id="header">
+        <!-- Big Antonella Pisani -->
+        <div id="name" class="name">
+          <h1>Antonella</h1>
+          <h1>Pisani</h1>
+        </div>
+        <!-- Logo -->
+        <div class="bigSpade">
+          <img src="images/spade.svg" id="bigSpade" alt="spade logo" />
+        </div>
+      </header>
 
-</head>
+      <!-- navigation bar -->
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#home" class="tab active">Home</a></li>
+          <li><a href="#aboutme" class="tab">About</a></li>
+          <li><a href="#projects" class="tab">Projects</a></li>
+          <li><a href="#contactme" class="tab">Contact</a></li>
+        </ul>
+      </nav>
 
-<body>
+      <!-- My intro -->
+      <div class="section" id="aboutme">
+        <h2>
+          <img
+            src="images/spadeonly.svg"
+            id="sectionSpade1"
+            class="sectionSpade"
+            alt="spade image"
+          />
+          About Me!
+        </h2>
+        <img src="images/me.jpg" id="profile" alt="Picture of myself" />
 
-  <div class="main" id="home">
-
-    <header class="header" id="header">
-      <!--Big Antonella Pisani-->
-      <div id="name" class="name">
-        <h1>Antonella</h1>
-        <h1>Pisani</h1>
+        <div class="intro">
+          <p>Hi!</p>
+          <p>
+            My name is Antonella and I'm a passionate web developer and
+            designer.
+          </p>
+          <img src="images/globe.jpg" alt="globe" class="introImage" />
+          <p>
+            I've lived in different parts of the world and had the chance to
+            learn about other cultures and languages.
+          </p>
+          <img src="images/pc.svg" alt="picture of my pc" class="introImage" />
+          <p>Some of the languages I use include:</p>
+          <img src="images/html.jpg" alt="css and html" class="introImage" />
+          <img src="images/css.jpg" alt="css and html" class="introImage" />
+          <img
+            src="images/javascript.jpg"
+            alt="javascript"
+            class="introImage"
+          />
+          <p>Some of the libraries I use are:</p>
+          <img src="images/jquery.png" alt="jquery" class="introImage" /> <br />
+          <img src="images/reactjs.png" alt="React JS" class="introImage" />
+          <br />
+          <img src="images/bootstrap.jpg" alt="Bootstrap" class="introImage" />
+        </div>
       </div>
-      <!--Logo-->
-      <div class="bigSpade">
-        <img src="images/spade.svg" id="bigSpade" alt="spade logo">
+
+      <!-- My projects -->
+      <div class="section" id="projects">
+        <h2>
+          <img
+            src="images/spadeonly.svg"
+            id="sectionSpade2"
+            class="sectionSpade"
+            alt="spade image"
+          />
+          My Projects!
+        </h2>
+        <p>Here are some of my projects.</p>
+        <p>Take a look!</p>
+        <div class="projects">
+          <div class="project">
+            <a href="/tributePage/tribute.html">
+              <img
+                src="images/tribute.jpg"
+                class="projectImage"
+                alt="screenshot of tribute project"
+              />
+            </a>
+            <p><em>Tribute Page</em></p>
+          </div>
+          <div class="project">
+            <a href="/todolist/todo.html"
+              ><img
+                src="images/todo.jpg"
+                class="projectImage"
+                alt="Scrennshot of to do list project"
+            /></a>
+            <p><em>To do App</em></p>
+          </div>
+          <div class="project">
+            <a href="/drums/drums.html"
+              ><img
+                src="images/drum.jpg"
+                class="projectImage"
+                alt="Scrennshot of drumset project"
+            /></a>
+            <p><em>Drum Set</em></p>
+          </div>
+          <div class="project">
+            <a href="/clock/clock.html"
+              ><img
+                src="images/clock.jpg"
+                class="projectImage"
+                alt="Scrennshot of clock project"
+            /></a>
+            <p><em>Clock</em></p>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <!-- navigation bar-->
-    <nav class="navbar" id="navbar">
-      <ul>
-        <li><a href="#home" class="tab active">Home</a></li>
-        <li><a href="#aboutme" class="tab">About</a></li>
-        <li><a href="#projects" class="tab">Projects</a></li>
-        <li><a href="#contactme" class="tab">Contact</a></li>
-      </ul>
-    </nav>
+      <!-- Contact Me -->
+      <div class="section" id="contactme">
+        <h2>
+          <img
+            src="images/spadeonly.svg"
+            id="sectionSpade3"
+            class="sectionSpade"
+            alt="spade image"
+          />
+          Contact Me!
+        </h2>
 
-    <!--My intro-->
-    <div class="section" id="aboutme">
-      <h2><img src="images/spadeonly.svg" id="sectionSpade1" class="sectionSpade" alt="spade image">
-        About Me!</h2>
-      <img src="images/me.jpg" id="profile" alt="Picture of myself">
+        <p>
+          If you like my work and what to get in contact with me be sure to
+          leave me a message below
+        </p>
 
-      <div class="intro">
-        <p>Hi!</p>
-        <p>My name is Antonella and I'm a passionate web developer and designer.</p>
-        <img src="images/globe.jpg" alt="globe" class="introImage">
-        <p>I've lived in different parts of the world and had the chance to learn about other cultures and languages.</p>
-        <img src="images/pc.svg" alt="picture of my pc" class="introImage">
-        <p>Some of the languages I use include:</p>
-        <img src="images/html.jpg" alt="css and html" class="introImage">
-        <img src="images/css.jpg" alt="css and html" class="introImage">
-        <img src="images/javascript.jpg" alt="javascript" class="introImage">
-        <p>Some of the libraries I use are:</p>
-        <img src="images/jquery.png" alt="jquery" class="introImage">
-        <br>
-        <img src="images/reactjs.png" alt="React JS" class="introImage">
-        <br>
-        <img src="images/bootstrap.jpg" alt="Bootstrap" class="introImage">
+        <!-- Form -->
+        <form
+          method="post"
+          name="contact"
+          action="/contact.php"
+          onsubmit="return formValidation()"
+          class="contact"
+          id="contact"
+        >
+          <label for="name">Name</label>
+          <input type="text" name="name" required /> <br />
+          <label for="email">E-Mail</label>
+          <input type="text" name="email" required /> <br /><br />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            class="message"
+            rows="10"
+            cols="50"
+            form="contact"
+            required
+          ></textarea>
+          <br />
+          <button id="button" type="submit" name="submit" value="send">
+            ✉ Send
+          </button>
+        </form>
       </div>
+      <footer>
+        <span style="float:right;font-family:arial"
+          >All Rights Reserved ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
+      </footer>
+      <br /><br /><br />
     </div>
 
-    <!--My projects-->
-    <div class="section" id="projects">
-      <h2><img src="images/spadeonly.svg" id="sectionSpade2" class="sectionSpade" alt="spade image"> My Projects!</h2>
-      <p>Here are some of my projects.</p>
-      <p>Take a look!</p>
-      <div class="projects">
-        <div class="project">
-          <a href="/tributePage/tribute.html">
-            <img src="images/tribute.jpg" class="projectImage" alt="screenshot of tribute project">
-          </a>
-          <p><em>Tribute Page</em></p>
-        </div>
-        <div class="project">
-          <a href="/todolist/todo.html"><img src="images/todo.jpg" class="projectImage" alt="Scrennshot of to do list project"></a>
-          <p><em>To do App</em></p>
-        </div>
-        <div class="project">
-          <a href="/drums/drums.html"><img src="images/drum.jpg" class="projectImage" alt="Scrennshot of drumset project"></a>
-          <p><em>Drum Set</em></p>
-        </div>
-      </div>
-    </div>
-
-
-    <!--Contact Me-->
-    <div class="section" id="contactme">
-      <h2><img src="images/spadeonly.svg" id="sectionSpade3" class="sectionSpade" alt="spade image"> Contact Me!</h2>
-
-      <p>If you like my work and what to get in contact with me be sure to leave me a message below</p>
-
-      <!--Form-->
-      <form method="post" name="contact" action="/contact.php" onsubmit="return formValidation()" class="contact" id="contact">
-        <label for='name'>Name</label>
-        <input type="text" name="name" required>
-        <br>
-        <label for='email'>E-Mail</label>
-        <input type="text" name="email" required>
-        <br><br>
-        <label for='message'>Message</label>
-        <textarea name="message" class="message" rows="10" cols="50" form="contact" required></textarea>
-        <br>
-        <button id="button" type="submit" name='submit' value="send"> ✉ Send</button>
-      </form>
-    </div>
-    <footer>
-      <span style="float:right;font-family:arial">All Rights Reserved ©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-      </span>
-    </footer>
-    <br><br><br>
-  </div>
-
-  <!--Scripts-->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="index.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

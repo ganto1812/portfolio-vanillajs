@@ -1,0 +1,130 @@
+* {
+  background: #0c6c8a;
+}
+
+body {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+h1 {
+  display: block;
+  font-size: 5rem;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+.controls {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+:root {
+  --color: #ffc600;
+  --border: 10px;
+  --blur: 0px;
+  --saturate: 1;
+  --sepia: 0%;
+  --grayscale: 0%;
+  --thumbColor: #0d89af;
+  --trackColor: #084e63;
+}
+
+img {
+  padding: var(--border);
+  background: var(--color);
+  filter: grayscale(var(--grayscale)) saturate(var(--saturate))
+    sepia(var(--sepia)) blur(var(--blur));
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+span {
+  color: var(--color);
+}
+
+/* Slider look */
+input[type="range"] {
+  height: 20px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--trackColor);
+  border-radius: 1px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: var(--thumbColor);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--trackColor);
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--trackColor);
+  border-radius: 1px;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: var(--thumbColor);
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: var(--trackColor);
+  border-radius: 2px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: var(--trackColor);
+  border-radius: 2px;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: var(--thumbColor);
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: var(--trackColor);
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: var(--trackColor);
+}

@@ -130,111 +130,199 @@ const transportation = data.reduce(function(obj, item) {
 }, {});
 
 console.log(transportation);*/
-
+//##################//
 //## SECOND PART ##//
+//##################//
 
-const people2 = [
-  { name: "Wes", year: 1988 },
-  { name: "Kait", year: 1986 },
-  { name: "Irv", year: 1970 },
-  { name: "Lux", year: 2015 }
-];
-const comments = [
-  { text: "Love this!", id: 523423 },
-  { text: "Super good", id: 823423 },
-  { text: "You are the best", id: 2039842 },
-  { text: "Ramen is my fav food ever", id: 123523 },
-  { text: "Nice Nice Nice!", id: 542328 }
-];
-// Some and Every Checks
-// Array.prototype.some() // is at least one person 19 or older?
-// const isAdult = people2.some(function(person) {
-//   const currentYear = new Date().getFullYear();
-//   return currentYear - person.year >= 19;
+// const people2 = [
+//   { name: "Wes", year: 1988 },
+//   { name: "Kait", year: 1986 },
+//   { name: "Irv", year: 1970 },
+//   { name: "Lux", year: 2015 }
+// ];
+// const comments = [
+//   { text: "Love this!", id: 523423 },
+//   { text: "Super good", id: 823423 },
+//   { text: "You are the best", id: 2039842 },
+//   { text: "Ramen is my fav food ever", id: 123523 },
+//   { text: "Nice Nice Nice!", id: 542328 }
+// ];
+// // Some and Every Checks
+// // Array.prototype.some() // is at least one person 19 or older?
+// // const isAdult = people2.some(function(person) {
+// //   const currentYear = new Date().getFullYear();
+// //   return currentYear - person.year >= 19;
+// // });
+
+// const isAdult = people2.some(
+//   person => new Date().getFullYear() - person.year >= 19
+// );
+// console.log({ isAdult });
+
+// // Array.prototype.every() // is everyone 19 or older?
+// const allAdult = people2.every(
+//   person => new Date().getFullYear() - person.year >= 19
+// );
+// console.log({ allAdult });
+
+// // Array.prototype.find()
+
+// // Find is like filter, but instead returns just the one you are looking for
+// // find the comment with the ID of 823423
+
+// // const comment = comments.find(function(comment) {
+// //   if (comment.id === 823423) {
+// //     return true;
+// //   }
+// // });
+
+// const comment = comments.find(comment => comment.id === 823423);
+
+// console.log(comment);
+
+// // Array.prototype.findIndex()
+// // Find the comment with this ID
+// // delete the comment with the ID of 823423
+// const index = comments.findIndex(comment => comment.id === 823423);
+
+// console.log(index);
+// console.table(comments);
+
+// //REDUX
+// const newComments = [...comments.slice(0, index), ...comments.slice(index + 1)];
+
+// console.table(newComments);
+
+// //SPLICE
+// comments.splice(index, 1);
+
+// console.table(comments);
+
+// // 3 DEV TOOLS! //
+// const dogs = [{ name: "Snickers", age: 2 }, { name: "hugo", age: 8 }];
+// function makeGreen() {
+//   const p = document.querySelector("p");
+//   p.style.color = "#BADA55";
+//   p.style.fontSize = "50px";
+// }
+// // Regular
+// // Interpolated
+// // Styled
+// // warning!
+// console.warn("Oh Snap!");
+// // Error :|
+// console.error("You stepped on shit");
+// // Info
+// console.info("vegan shit");
+// // Testing
+// const h1 = document.querySelector("h1");
+// console.assert(h1.classList.contains("ola"), "It doesn't contain ola");
+// // clearing
+// // Viewing DOM Elements
+// console.log(h1);
+// console.dir(h1);
+// // Grouping together
+// dogs.forEach(dog => {
+//   console.group(`${dog.name}`);
+//   console.log(`Name: ${dog.name}`);
+//   console.log(`Age: ${dog.age}`);
+//   console.log(`Human years: ${dog.age * 7}`);
+//   console.groupEnd(`${dog.name}`);
 // });
+// // counting
+// console.count("p");
+// // timing
+// console.time("fetching data");
+// fetch("https://api.github.com/users/wesbos")
+//   .then(data => data.json())
+//   .then(data => {
+//     console.timeEnd("fetching data");
+//     console.log(data);
+//   });
 
-const isAdult = people2.some(
-  person => new Date().getFullYear() - person.year >= 19
-);
-console.log({ isAdult });
+//#################//
+//## THIRD PART ##//
+//################//
+//References VS Copies
 
-// Array.prototype.every() // is everyone 19 or older?
-const allAdult = people2.every(
-  person => new Date().getFullYear() - person.year >= 19
-);
-console.log({ allAdult });
+let age = 100;
+let age2 = age;
+console.log(age, age2);
+age = 200;
+console.log(age, age2);
 
-// Array.prototype.find()
+const players = ["Wes", "Sarah", "Ryan", "poppy"];
 
-// Find is like filter, but instead returns just the one you are looking for
-// find the comment with the ID of 823423
+const team = players;
 
-// const comment = comments.find(function(comment) {
-//   if (comment.id === 823423) {
-//     return true;
-//   }
-// });
+console.log(players, team);
 
-const comment = comments.find(comment => comment.id === 823423);
+team[3] = "Lux";
 
-console.log(comment);
+console.log(players, team);
 
-// Array.prototype.findIndex()
-// Find the comment with this ID
-// delete the comment with the ID of 823423
-const index = comments.findIndex(comment => comment.id === 823423);
+//Copies of arrays
 
-console.log(index);
-console.table(comments);
+const team2 = players.slice();
+team2[3] = "BRB";
 
-//REDUX
-const newComments = [...comments.slice(0, index), ...comments.slice(index + 1)];
+console.log(players, team2);
 
-console.table(newComments);
+const team3 = [].concat(players);
+console.log(team3);
 
-//SPLICE
-comments.splice(index, 1);
+const team4 = [...players];
+console.log(team4);
 
-console.table(comments);
+const team5 = Array.from(players);
+console.log(team5);
 
-// 3 DEV TOOLS! //
-const dogs = [{ name: "Snickers", age: 2 }, { name: "hugo", age: 8 }];
-function makeGreen() {
-  const p = document.querySelector("p");
-  p.style.color = "#BADA55";
-  p.style.fontSize = "50px";
-}
-// Regular
-// Interpolated
-// Styled
-// warning!
-console.warn("Oh Snap!");
-// Error :|
-console.error("You stepped on shit");
-// Info
-console.info("vegan shit");
-// Testing
-const p = document.querySelector("p");
-console.assert(p.classList.contains("ola"), "It doesn't contain ola");
-// clearing
-// Viewing DOM Elements
-console.log(p);
-console.dir(p);
-// Grouping together
-dogs.forEach(dog => {
-  console.group(`${dog.name}`);
-  console.log(`Name: ${dog.name}`);
-  console.log(`Age: ${dog.age}`);
-  console.log(`Human years: ${dog.age * 7}`);
-  console.groupEnd(`${dog.name}`);
-});
-// counting
-console.count("p");
-// timing
-console.time("fetching data");
-fetch("https://api.github.com/users/wesbos")
-  .then(data => data.json())
-  .then(data => {
-    console.timeEnd("fetching data");
-    console.log(data);
-  });
+//Copies of objects
+
+const person = {
+  name: "Anto",
+  age: 27,
+  other: {
+    dog: "Yes",
+    cat: "Yes"
+  }
+};
+
+const me = person;
+me.lastname = "Pisani";
+console.log(person, me);
+
+//Only 1 level deep :'(
+const me2 = Object.assign({}, person, { color: "Green" });
+console.log(person, me2);
+me2.other.cat = "ofc";
+console.log(person, me2);
+
+const me3 = { ...person };
+console.log("person, me3");
+console.log(person, me3);
+
+////////////////////
+//Youtube Exercise//
+////////////////////
+
+//convert into nodelist into an array
+const timeNodes = Array.from(document.querySelectorAll("[data-time]"));
+// [... ] == Array.from
+
+const seconds = timeNodes
+  .map(node => node.dataset.time)
+  .map(timeCode => {
+    const [mins, secs] = timeCode.split(":").map(parseFloat);
+    return mins * 60 + secs;
+  })
+  .reduce((total, vidSeconds) => total + vidSeconds);
+
+let secondsLeft = seconds;
+const hours = Math.floor(secondsLeft / 3600);
+secondsLeft = secondsLeft % 3600;
+
+const mins = Math.floor(secondsLeft / 60);
+secondsLeft = secondsLeft % 60;
+
+console.log(hours, mins, secondsLeft);

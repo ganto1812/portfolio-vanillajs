@@ -78,7 +78,8 @@ ul a:hover {
 }
 
 /* Home */
-.section {
+
+.section:nth-child(n + 2) {
   font-size: 30px;
   padding: 100px 0;
 }

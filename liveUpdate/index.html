@@ -68,8 +68,12 @@
       <label for="color">Color</label>
       <input type="color" name="color" value="#ffc600" />
     </div>
+
+      <input type="file" value="Upload" onchange="uploadImage(this)" name="submit" id="image" accept="image/x-png,image/gif,image/jpeg"/>
+    </form>
+
     <img
-      src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1351&q=80"
+      src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1351&q=80" id="editImage" alt="image to edit" download onclick="download()"
     />
 
     <style></style>

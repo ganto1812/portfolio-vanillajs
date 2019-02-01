@@ -108,16 +108,25 @@ ul a:hover {
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
   margin: 20px;
 }
 
-.introImage {
+.introIm {
+  height: 100px;
+  margin: 10px 0;
+}
+.languageIm {
+  width: 100px;
+  margin: 100px 0;
+}
+.libraryIm {
   height: 100px;
   margin: 10px 0;
 }
 
 .projects {
+  padding: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

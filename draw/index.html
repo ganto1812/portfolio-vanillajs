@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML5 Canvas</title>
+    <title>Draw!</title>
+    <link
+      rel="icon"
+      href="../images/spade.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
   </head>
   <body>
     <canvas id="draw" width="800" height="800"></canvas>
-    <script src="index.js"></script>
-
     <style>
       html,
       body {
@@ -16,6 +20,13 @@
       .draw {
         border: 1px solid black;
       }
+      @media only screen and (max-width: 600px) {
+        canvas {
+          width: 400px;
+          height: 800px;
+        }
+      }
     </style>
+    <script src="index.js"></script>
   </body>
 </html>

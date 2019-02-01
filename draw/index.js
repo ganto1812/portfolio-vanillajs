@@ -6,6 +6,8 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 50;
+ctx.font = "30px Arial";
+ctx.fillText("Click and hold your mouse to draw!", 500, 50);
 
 let isDrawing = false;
 let lastX = 0;
@@ -15,7 +17,6 @@ let direction = true;
 
 function draw(e) {
   if (!isDrawing) return;
-  console.log(e);
   ctx.strokeStyle = `hsl(${hue}, 100%, 30%)`;
   ctx.beginPath();
   ctx.moveTo(lastX, lastY);

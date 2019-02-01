@@ -8,13 +8,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  align-items: center;
+  background-color: rgb(204, 141, 83);
 }
 
 .player {
-  max-width: 750px;
+  margin: 100px;
+  max-width: 900px;
   position: relative;
   font-size: 0;
   overflow: hidden;
+  border: 5px solid rgba(128, 128, 128, 0.2);
 }
 
 .player_video {
@@ -27,17 +32,22 @@ body {
   height: 30px;
   text-align: center;
   max-width: 50px;
+  outline: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0.8;
+  cursor: pointer;
 }
 
 .player_slider {
-  width: 10px;
+  width: 60px;
   height: 30px;
 }
 
 .player_controls {
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   transform: translateY(100%) translateY(-5px);
   transition: all 0.3s;

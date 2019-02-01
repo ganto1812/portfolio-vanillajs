@@ -14,6 +14,9 @@ const bands = [
   "An Old Dog"
 ];
 
+document.querySelector(".bands").innerHTML = bands
+  .map(band => `<li>${band}</li>`)
+  .join("");
 function strip(bandName) {
   return bandName.replace(/^(a |the |an )/i, "").trim();
 }
@@ -24,7 +27,8 @@ let sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
 // } else {
 //     return -1;
 //}
-
-document.querySelector(".bands").innerHTML = sortedBands
-  .map(band => `<li>${band}</li>`)
-  .join("");
+document.querySelector("button").addEventListener("click", () => {
+  document.querySelector(".bands").innerHTML = sortedBands
+    .map(band => `<li>${band}</li>`)
+    .join("");
+});

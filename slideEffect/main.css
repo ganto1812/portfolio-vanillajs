@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: #9e842d;
+  background: #ccda10;
   font-family: "helvetica neue";
   font-size: 20px;
   font-weight: 200;
@@ -24,6 +24,9 @@ h1 {
   background: white;
   padding: 40px;
   text-align: justify;
+}
+img {
+  max-width: 300px;
 }
 .align-left {
   float: left;

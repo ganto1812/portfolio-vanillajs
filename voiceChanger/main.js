@@ -29,7 +29,6 @@ function toggle(startOver = true) {
 }
 
 function setOption() {
-  console.log(this.name, this.value);
   msg[this.name] = this.value;
   toggle();
 }

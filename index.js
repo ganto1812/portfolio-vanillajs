@@ -25,7 +25,6 @@ function fixNav() {
 
 window.addEventListener("scroll", () => {
   let currentHeight = this.scrollTop;
-  console.log(currentHeight);
   const sections2 = document.querySelectorAll(".section");
   sections2.forEach(section => {
     sectionTop = section.offsetTop - topOfNav;
@@ -43,7 +42,6 @@ window.addEventListener("scroll", () => {
 (nav = $("nav")), (nav_height = nav.outerHeight());
 $(window).on("scroll", function() {
   let cur_pos = $(this).scrollTop();
-  console.log(cur_pos);
   let sections = $(".section");
   sections.each(function() {
     let top = $(this).offset().top - nav_height,

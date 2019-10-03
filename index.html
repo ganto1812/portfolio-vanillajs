@@ -34,27 +34,30 @@
 
   <body>
     <div class="bigContainer">
+
+      <!-- navigation bar -->
+      <nav class="navbar navbar-expand-lg d-flex sticky-top" id="navbar">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link active px-3">Home</a></li>
+            <li class="nav-item"><a href="#aboutme" class="nav-link px-3">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link px-3">Projects</a></li>
+            <li class="nav-item"><a href="#contactme" class="nav-link px-3">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="section header" id="home">
         <!-- Big Antonella Pisani -->
-        <div id="name" class="name">
-          <span>Antonella</span>
-          <span>Pisani</span>
+        <div class="name">
+          <img src="images/name.svg" alt="Antonella Pisani" class="img-fluid p-5" >
         </div>
+
         <!-- Logo -->
         <div class="bigSpade">
           <img src="images/spade.svg" id="bigSpade" alt="spade logo" />
         </div>
       </header>
-
-      <!-- navigation bar -->
-      <nav class="navbar" id="navbar">
-        <ul>
-          <li><a href="#home" class="tab active">Home</a></li>
-          <li><a href="#aboutme" class="tab">About</a></li>
-          <li><a href="#projects" class="tab">Projects</a></li>
-          <li><a href="#contactme" class="tab">Contact</a></li>
-        </ul>
-      </nav>
 
       <!--intro -->
       <div class="section" id="aboutme">
@@ -70,45 +73,61 @@
         <img src="images/me.jpg" id="profile" alt="Picture of myself" />
 
         <div class="intro">
-          <p>Hi!</p>
-          <p>
-            My name is Antonella and I'm a self-taught Front End Developer
-            currently working to become a Full Stack Developer.
-          </p>
-          <img src="images/globe.jpg" alt="globe" class="introIm" />
-          <p>
-            I've lived in many countries and learned a lot about new cultures
-            and languages.
-          </p>
-          <img src="images/pc.svg" alt="picture of my pc" class="introIm" />
-          <p>I've always had a passion for computers and programming.</p>
-          <p>Some of the languages I use today include:</p>
-          <img src="images/html.jpg" alt="css and html" class="mx-auto" />
-          <img src="images/css.jpg" alt="css and html" class="mx-auto" />
-          <img
-            src="images/javascript.jpg"
-            alt="javascript"
-            class="mx-auto"
-          />
-          <img src="images/cSharp.png" alt="c#" class="d-block mx-auto" />
-          <img src="images/mysql.svg" alt="mysql" class="d-block mx-auto" />
-          <p>Some of the libraries I use are:</p>
-          <img src="images/jquery.png" alt="jquery" class="mx-auto" /> <br />
-          <img src="images/reactjs.png" alt="React JS" class="mx-auto" />
-          <br />
-          <img src="images/bootstrap.jpg" alt="Bootstrap" class="mx-auto" />
-          <img src="images/sass.png" alt="Sass" class="d-block mx-auto" />
-          <p>Designing software</p>
-          <img src="images/photoshop.svg" alt="Photoshop" class="mx-auto" />
-          <img src="images/illustrator.jpg" alt="Illustrator" class="mx-auto" />
-          <img src="images/adobe-xd.svg" alt="XD" class="mx-auto" />
-          <img src="images/gimp.png" alt="Gimp" class="mx-auto d-block" />
-          <img src="images/inkscape.png" alt="Inkscape" class="mx-auto" />
+          <div class="m-5">
+            <p>Hi!</p>
+            <p>
+              I'm Antonella and I'm a self-taught Front End Developer
+              currently working to become a Full Stack Developer.
+            </p>
+            <i class="fas primary-color fa-baby fa-3x p-5"></i>
+            <p>
+              I was 12 when I created my first website.
+            </p>
+            <p>
+              It wasn't very artistic but it had a great performance.
+            </p>
+            <i class="fas primary-color fa-laptop-code fa-3x p-5"></i>
+            <p>
+              I decided to dedicate all of time to programming about a year and a half ago.
+            </p>
+            <i class="fas primary-color fa-code fa-3x p-5"></i>
+            <p>I've always had a passion for computers and programming.</p>
+          </div>
+          <div>
+            <div class="p-5 m-5">
+               <h2>Some of the languages I use today include:</h2>
+            <img src="images/html.jpg" alt="css and html" class="mx-auto img-fluid m-5" />
+            <img src="images/css.jpg" alt="css and html" class="mx-auto img-fluid m-5" />
+            <img
+              src="images/javascript.jpg"
+              alt="javascript"
+              class="mx-auto img-fluid m-5"
+            />
+            <img src="images/cSharp.png" alt="c#" class="d-block mx-auto img-fluid m-5" />
+            <img src="images/mysql.svg" alt="mysql" class="d-block mx-auto img-fluid m-5" />
+            </div>
+            <div class="p-5 m-5">
+               <h2>Libraries:</h2>
+            <img src="images/jquery.png" alt="jquery" class="mx-auto img-fluid m-5" /> <br />
+            <img src="images/reactjs.png" alt="React JS" class="mx-auto img-fluid m-5" />
+            <br />
+            <img src="images/bootstrap.jpg" alt="Bootstrap" class="mx-auto img-fluid m-5" />
+            <img src="images/sass.png" alt="Sass" class="d-block mx-auto img-fluid m-5" />
+            </div>
+           <div class="p-5 m-5">
+             <h2>Designing software:</h2>
+            <img src="images/photoshop.svg" alt="Photoshop" class="mx-auto img-fluid m-5" />
+            <img src="images/illustrator.jpg" alt="Illustrator" class="mx-auto img-fluid m-5" />
+            <img src="images/adobe-xd.svg" alt="XD" class="mx-auto img-fluid m-5" />
+            <img src="images/gimp.png" alt="Gimp" class="mx-auto d-block img-fluid m-5" />
+            <img src="images/inkscape.png" alt="Inkscape" class="mx-auto img-fluid m-5" />
+           </div>
+          </div>
         </div>
       </div>
 
       <!--projects -->
-      <div class="section" id="projects">
+      <div class="section" id="projects container">
         <h1>
           <img
             src="images/spadeonly.svg"
@@ -120,8 +139,8 @@
         </h1>
         <p>Here are some of my projects.</p>
         <p>Take a look!</p>
-        <div class="projects">
-          <div class="project">
+        <div class="projects row">
+          <div class="project col-2">
             <a href="/tributePage/tribute.html">
               <img
                 src="images/tribute.jpg"
@@ -131,7 +150,7 @@
             </a>
             <p><em>Tribute Page</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/todolist/todo.html"
               ><img
                 src="images/todo.jpg"
@@ -140,7 +159,7 @@
             /></a>
             <p><em>To do App</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/drums/drums.html"
               ><img
                 src="images/drum.jpg"
@@ -149,7 +168,7 @@
             /></a>
             <p><em>Drum Set</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/clock/clock.html"
               ><img
                 src="images/clock.jpg"
@@ -158,7 +177,7 @@
             /></a>
             <p><em>Clock</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/liveUpdate/index.html"
               ><img
                 src="images/liveUpdate.jpg"
@@ -167,7 +186,7 @@
             /></a>
             <p><em>Live Editing</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/draw/index.html"
               ><img
                 src="images/draw.jpg"
@@ -176,7 +195,7 @@
             /></a>
             <p><em>Draw!</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/flexPannels/index.html"
               ><img
                 src="images/flexPannels.jpg"
@@ -185,7 +204,7 @@
             /></a>
             <p><em>Flex Pannels</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/mouseEffects/main.html"
               ><img
                 src="images/mouseEffects.jpg"
@@ -194,7 +213,7 @@
             /></a>
             <p><em>Mouse Effect</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/searchBar/index.html"
               ><img
                 src="images/searchBar.jpg"
@@ -203,7 +222,7 @@
             /></a>
             <p><em>Cool search bar</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/shift/main.html"
               ><img
                 src="images/shift.jpg"
@@ -212,7 +231,7 @@
             /></a>
             <p><em>Hold shift</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/slideEffect/main.html"
               ><img
                 src="images/slideEffect.jpg"
@@ -221,7 +240,7 @@
             /></a>
             <p><em>Slide Effect</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/sortPlugin/main.html"
               ><img
                 src="images/sortPlugin.jpg"
@@ -230,7 +249,7 @@
             /></a>
             <p><em>Sort Plugin</em></p>
           </div>
-          <div class="project">
+          <div class="project col-2">
             <a href="/tapasList/main.html"
               ><img
                 src="images/tapasList.jpg"
@@ -239,7 +258,7 @@
             /></a>
             <p><em>Tapas List</em></p>
           </div>
-          <!-- <div class="project">
+          <!-- <div class="project col-2">
             <a href="/videoPlayer/index.html"
               ><img
                 src="images/videoPlayer.jpg"
@@ -248,7 +267,7 @@
             /></a>
             <p><em>Custom Video Player</em></p>
           </div> -->
-          <div class="project">
+          <div class="project col-2">
             <a href="/voiceChanger/main.html"
               ><img
                 src="images/voiceChanger.jpg"
@@ -257,7 +276,7 @@
             /></a>
             <p><em>Pick a Voice</em></p>
           </div>
-          <!-- <div class="project">
+          <!-- <div class="project col-2">
             <a href="/WebRPG/index.html"
               ><img
                 src="images/WebRPG.jpg"
@@ -293,19 +312,25 @@
           class="contact"
           id="contact"
         >
+        <div class="form-group">
           <label for="name">Name</label>
           <input type="text" name="name" required /> <br />
+        </div>
+        <div class="form-group">
           <label for="email">Email</label>
           <input type="text" name="email" required /> <br /><br />
-          <label for="message">Message</label>
+        </div>
+         <div class="form-group">
+           <label for="message">Message</label>
           <textarea
             name="message"
-            class="message"
+            class="form-control col-4 offset-4"
             rows="10"
             cols="50"
             form="contact"
             required
           ></textarea>
+         </div>         
           <br />
           <button id="button" type="submit" name="submit" value="send">
             ✉ Send
@@ -327,5 +352,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/8640c1d893.js" crossorigin="anonymous"></script>
   </body>
 </html>

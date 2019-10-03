@@ -21,23 +21,6 @@ body {
   display: flex;
 }
 
-.name {
-  position: static;
-  padding: 2em 3em 0em;
-  font-size: 2em;
-  color: map-get($map: $colours, $key: text);
-  text-shadow: 0.1em 0.2em 0.3em map-get($map: $colours, $key: name_shadow);
-  line-height: 0.15;
-
-  h1::first-letter {
-    font-size: 2em;
-  }
-}
-// .name_navbar {
-//   position: sticky;
-//   z-index: 3;
-// }
-
 .bigSpade img {
   position: relative;
   left: -30%;
@@ -49,32 +32,19 @@ body {
   transform: rotateY(360deg);
   transition: 5s;
 }
-
+.primary-color {
+  color: map-get($map: $colours, $key: primary);
+}
 //Navbar
 .navbar {
   background-color: map-get($map: $colours, $key: primary);
   box-shadow: 0 1px 6px 0 #575757;
-  overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1000;
-
-  ul {
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    float: right;
-
-    li {
-      padding: 10px 0;
-    }
+  padding: 0;
 
     a {
       color: white;
       font-size: 1.5rem;
       text-decoration: none;
-      padding: 10px 60px;
     }
     a:hover {
       background-color: map-get($map: $colours, $key: hover);
@@ -83,7 +53,6 @@ body {
       background-color: map-get($map: $colours, $key: navbar_active);
     }
   }
-}
 
 /* Home */
 
@@ -140,7 +109,7 @@ p {
 
   .project {
     display: block;
-    margin: 100px 5% 0;
+    // margin: 100px 5% 0;
   }
 
   .projectImage {
@@ -263,17 +232,6 @@ button:hover {
   .project {
     margin: 10px 0;
   }
-
-  /* .hiddenImage {
-    position: absolute;
-    left: -10px;
-    height: 30vw;
-    padding: 20vw;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-   } */
 
   .projectImage:hover {
     opacity: 0;

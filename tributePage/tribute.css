@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 1.5vw;
+}
+
+.backgroundImage {
+  display: block;
+  margin-left: 10%;
+  margin-top: 200px;
+  width: 80%;
+  position: fixed;
+}
+
+.background {
+  background-color: #080808;
+  height: 12000px;
+}
+
+.main {
+  font-size: 16px;
+  position: relative;
+  float: center;
+  top: 1000px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgba(255, 255, 255, 0.76);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px white;
+  min-width: 50%;
+}
+
+.filmImage {
+  display: block;
+  position: relative;
+  width: 150px;
+  max-width: 10%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 6px 50px white;
+}
+.filmImage:hover {
+  animation-name: dance;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes dance {
+  0% {
+    box-shadow: 0 1px 20px white;
+  }
+  25% {
+    transform: rotate(5deg);
+    box-shadow: 0 6px 80px white;
+  }
+  50% {
+    box-shadow: 0 6px 20px white;
+  }
+  75% {
+    transform: rotate(-5deg);
+    box-shadow: 0 6px 80px white;
+  }
+  100% {
+    box-shadow: 0 6px 20px white;
+  }
+}
+
+.rightImages {
+  float: right;
+  top: 1000px;
+  margin-right: 5%;
+}
+
+.leftImages {
+  float: left;
+  top: 1000px;
+  margin-left: 5%;
+}
+
+@media (max-width: 800px) {
+  .backgroundImage {
+    width: 120%;
+    margin-left: -10%;
+  }
+  .btn {
+    padding: 1px;
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 13px;
+    margin: 5px;
+  }
+  .main {
+    font-size: 12px;
+  }
+  .filmImage {
+    max-width: 30%;
+    float: none;
+    margin: 10px auto;
+  }
+}

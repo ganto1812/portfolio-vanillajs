@@ -1,8 +1,33 @@
+/* Essentials */
+.margin-top-100 {
+  margin-top: 100px;
+}
+.margin-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.padding-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.center {
+  text-align: center;
+}
+
+/* Structure */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+  background-color: rgb(0, 0, 0);
+}
+
 .header {
-  position: fixed;
-  z-index: 1;
+  top: 0;
   width: 100%;
-  padding: 12px;
+  padding-bottom: 5px;
   background: black;
   color: #d3d3d3;
   text-align: center;
@@ -10,38 +35,77 @@
 
 h1 {
   font-size: 6vw;
+  margin: 0;
+  padding: 20px;
 }
 
 h2 {
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
-.backgroundImage {
-  display: block;
-  margin-left: 10%;
-  margin-top: 200px;
-  width: 80%;
-  position: fixed;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.background {
-  background-color: #080808;
-  height: 12000px;
+.bgimg-1 {
+  min-height: 900px;
+  background: url("https://pmcvariety.files.wordpress.com/2013/09/hayao-miyazaki.jpg?w=1000&h=563&crop=1") no-repeat #080808;
+}
+
+.bgimg-2 {
+  min-height: 400px;
+  background: url("https://ca-times.brightspotcdn.com/dims4/default/c07cffb/2147483647/strip/true/crop/2045x1363+2+0/resize/1680x1120!/quality/90/?url=https%3A%2F%2Fca-times.brightspotcdn.com%2Fdc%2Fd6%2F7c77ace464469349e084ac0c876e%2Fla-et-hayao-miyazaki-films-pictures-006") no-repeat #080808;
+}
+
+.bgimg-3 {
+  min-height: 400px;
+  background: url("https://video-images.vice.com/_uncategorized/1491910102114-Miyazki-young.png") no-repeat #080808;
+}
+
+.bgimg-4 {
+  min-height: 400px;
+  background: url("https://cdn.japantimes.2xx.jp/wp-content/uploads/2019/04/n-miyazaki-c-20190420.jpg") no-repeat #080808;
+}
+
+.text-block {
+  position: relative;
+  float: center;
+  color: whitesmoke;
+  background-color: #252525;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px #a5a5a5;
+  min-width: 50%;
+}
+
+.long {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
 }
 
 .main {
-  font-size: 16px;
-  position: relative;
-  float: center;
-  top: 1000px;
+  font-size: 15px;
   margin-left: 20%;
   margin-right: 20%;
-  background: rgba(255, 255, 255, 0.76);
-  color: black;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 1px 20px white;
-  min-width: 50%;
+}
+
+a {
+  color: #00638e;
+}
+
+.btn {
+  background: #0087b8;
+  border-radius: 10%;
+  border: none;
+  height: 30px;
+  color: white;
 }
 
 .filmImage {
@@ -51,7 +115,7 @@ h2 {
   max-width: 10%;
   height: auto;
   border-radius: 5%;
-  box-shadow: 0 6px 50px white;
+  box-shadow: 0 6px 50px #a5a5a5;
 }
 .filmImage:hover {
   animation-name: dance;
@@ -81,14 +145,16 @@ h2 {
 
 .rightImages {
   float: right;
-  top: 1000px;
   margin-right: 5%;
 }
 
 .leftImages {
   float: left;
-  top: 1000px;
   margin-left: 5%;
+}
+
+footer {
+  padding-bottom: 30px;
 }
 
 @media (max-width: 800px) {
@@ -117,3 +183,4 @@ h2 {
     margin: 10px auto;
   }
 }
+

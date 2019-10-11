@@ -3,11 +3,15 @@ $colours: (
   primary: #0490b3,
   hover: #005368,
   navbar_active: #7e1946,
-  text: #373737
+  text: #4b4b4b
 );
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -15,6 +19,16 @@ body {
   font-family: "Indie Flower", cursive;
   text-align: center;
   color: map-get($map: $colours, $key: text);
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 25px;
+  margin: 20px;
+  font-weight: bold;
 }
 
 .header {
@@ -85,11 +99,6 @@ body {
   width: 8em;
 }
 
-p {
-  font-size: 25px;
-  margin: 20px;
-}
-
 .introIm,
 .libraryIm {
   height: 100px;
@@ -100,28 +109,16 @@ p {
   margin: 100px 0;
 }
 
-.projects {
-  margin: 0 50px;
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  flex-wrap: wrap;
+.projectImage {
+  width: 100px;
+  border: solid 0.3em #cccccc75;
+  -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  box-shadow: 0px 0px 0px 0.3em rgba(197, 197, 197, 0.13);
+}
 
-  .project {
-    display: block;
-    // margin: 100px 5% 0;
-  }
-
-  .projectImage {
-    width: 100px;
-    border: solid 0.3em #cccccc75;
-    -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: width 0.5s;
-    box-shadow: 0px 0px 0px 0.3em rgba(197, 197, 197, 0.13);
-  }
-  .projectImage:hover {
-    width: 150px;
-  }
+.projectImage:hover {
+  width: 150px;
 }
 
 em {
@@ -163,8 +160,16 @@ button:hover {
 
 /* Phone responsive */
 @media screen and (max-width: 970px) {
+ h2 {
+    font-size: 1em;
+  }
+  
+  p {
+    font-size: 0.5em;
+  }
+
   .bigSpade img {
-    height: 4em;
+    height: 20vw;
     top: 3em;
   }
   .name {
@@ -195,10 +200,6 @@ button:hover {
     width: 4em;
   }
 
-  h2 {
-    font-size: 1em;
-  }
-
   .section:nth-child(n + 2) {
     font-size: 2em;
     padding: 1em 0 0;
@@ -211,10 +212,6 @@ button:hover {
     height: 1em;
   }
 
-  p {
-    font-size: 0.5em;
-  }
-
   .introIm,
   .libraryIm,
   .languageIm {
@@ -225,10 +222,6 @@ button:hover {
     width: 2em;
   }
 
-  .projects {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
   .project {
     margin: 10px 0;
   }
@@ -250,5 +243,6 @@ button:hover {
 
   footer span {
     font-size: 10px;
+    margin: 10px;
   }
 }

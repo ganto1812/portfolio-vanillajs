@@ -8,12 +8,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Full Stack Web Developer based in Chile, Santiago. Knowledge on: HTML, CSS, XML, JavaScript, C#, .NET, MVC, Bootstrap, Sass, JS."
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower"
       rel="stylesheet"
@@ -23,6 +17,12 @@
       type="text/css"
       href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
     />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Full Stack Web Developer based in Chile, Santiago. Knowledge on: HTML, CSS, XML, JavaScript, C#, .NET, MVC, Bootstrap, Sass, JS."
+    />    
     <meta
       name="keywords"
       content="HTML,CSS,XML,JavaScript,Web developer,Front end,Back end,C#,Bootstrap,Sass,JS,.NET,MVC,Desarrollador web,Chile, Santiago"
@@ -68,13 +68,12 @@
             class="sectionSpade"
             alt="spade image"
           />
-          About Me!
+          ABOUT ME
         </h1>
-        <img src="images/me.jpg" id="profile" alt="Picture of myself" />
-
+        <img src="images/me.jpg" id="profile" alt="Picture of myself" title="Antonella Pisani" />
         <div class="intro">
           <div class="m-5">
-            <p>Hi!</p>
+            <p>Hi</p>
             <p>
               I'm Antonella, a self-taught Front End Developer, currently working to become a Full Stack Developer.
             </p>
@@ -85,7 +84,7 @@
             <p>
               It wasn't very artistic, but had great performance!
             </p>
-            <i class="fas primary-color fa-laptop-code fa-3x p-5"></i>
+            <i class="fas primary-color fa-laptop fa-3x p-5"></i>
             <p>
               I decided to dedicate all of my time to programming about a year and a half ago.
             </p>
@@ -95,31 +94,32 @@
           <div>
             <div class="p-5 m-5">
                <h2>Some of the languages I use today include:</h2>
-            <img src="images/html.jpg" alt="css and html" class="mx-auto img-fluid m-5" />
-            <img src="images/css.jpg" alt="css and html" class="mx-auto img-fluid m-5" />
+            <img src="images/html.jpg" alt="html" class="mx-auto img-fluid m-5" title="HTML" />
+            <img src="images/css.jpg" alt="css" class="mx-auto img-fluid m-5" title="CSS" />
             <img
               src="images/javascript.jpg"
               alt="javascript"
               class="mx-auto img-fluid m-5"
+              title="javascript"
             />
-            <img src="images/cSharp.png" alt="c#" class="d-block mx-auto img-fluid m-5" />
-            <img src="images/mysql.svg" alt="mysql" class="d-block mx-auto img-fluid m-5" />
+            <img src="images/cSharp.png" alt="c#" class="d-block mx-auto img-fluid m-5" title="C#" />
+            <img src="images/mysql.svg" alt="mysql" class="d-block mx-auto img-fluid m-5" title="MySQL" />
             </div>
             <div class="p-5 m-5">
                <h2>Libraries:</h2>
-            <img src="images/jquery.png" alt="jquery" class="mx-auto img-fluid m-5" />
-            <img src="images/reactjs.png" alt="React JS" class="mx-auto img-fluid m-5" />
-            <img src="images/bootstrap.jpg" alt="Bootstrap" class="mx-auto img-fluid m-5" />
-            <img src="images/sass.png" alt="Sass" class="mx-auto img-fluid m-5" />
+            <img src="images/jquery.png" alt="jquery" class="mx-auto img-fluid m-5" title="JQuery" />
+            <img src="images/reactjs.png" alt="React JS" class="mx-auto img-fluid m-5" title="React" />
+            <img src="images/bootstrap.jpg" alt="Bootstrap" class="mx-auto img-fluid m-5" title="Bootstrap" />
+            <img src="images/sass.png" alt="Sass" class="mx-auto img-fluid m-5" title="SASS" />
             </div>
            <div class="p-5 m-5">
              <h2>Designing software:</h2>
-            <img src="images/photoshop.svg" alt="Photoshop" class="mx-auto img-fluid m-5" />
-            <img src="images/illustrator.jpg" alt="Illustrator" class="mx-auto img-fluid m-5" />
-            <img src="images/adobe-xd.svg" alt="XD" class="mx-auto img-fluid m-5" />
+            <img src="images/photoshop.svg" alt="Photoshop" class="mx-auto img-fluid m-5" title="Photoshop" />
+            <img src="images/illustrator.jpg" alt="Illustrator" class="mx-auto img-fluid m-5" title="Illustrator" />
+            <img src="images/adobe-xd.svg" alt="XD" class="mx-auto img-fluid m-5" title="Adove XD" />
             <br>
-            <img src="images/gimp.png" alt="Gimp" class="mx-auto img-fluid m-5" />
-            <img src="images/inkscape.png" alt="Inkscape" class="mx-auto img-fluid m-5" />
+            <img src="images/gimp.png" alt="Gimp" class="mx-auto img-fluid m-5" title="Gimp" />
+            <img src="images/inkscape.png" alt="Inkscape" class="mx-auto img-fluid m-5" title="Inkscape" />
            </div>
           </div>
         </div>
@@ -134,12 +134,12 @@
             class="sectionSpade"
             alt="spade image"
           />
-          My Projects!
+          MY PROJECTS
         </h1>
         <p>Here are some of my projects.</p>
         <p>Take a look!</p>
         <div class="projects row">
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/tributePage/tribute.html">
               <img
                 src="images/tribute.jpg"
@@ -149,7 +149,7 @@
             </a>
             <p><em>Tribute Page</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/todolist/todo.html"
               ><img
                 src="images/todo.jpg"
@@ -158,7 +158,7 @@
             /></a>
             <p><em>To do App</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/drums/drums.html"
               ><img
                 src="images/drum.jpg"
@@ -167,7 +167,7 @@
             /></a>
             <p><em>Drum Set</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/clock/clock.html"
               ><img
                 src="images/clock.jpg"
@@ -176,7 +176,7 @@
             /></a>
             <p><em>Clock</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/liveUpdate/index.html"
               ><img
                 src="images/liveUpdate.jpg"
@@ -185,7 +185,7 @@
             /></a>
             <p><em>Live Editing</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/draw/index.html"
               ><img
                 src="images/draw.jpg"
@@ -194,7 +194,7 @@
             /></a>
             <p><em>Draw!</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/flexPanels/index.html"
               ><img
                 src="images/flexPanels.jpg"
@@ -203,7 +203,7 @@
             /></a>
             <p><em>Flex Panels</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/mouseEffects/main.html"
               ><img
                 src="images/mouseEffects.jpg"
@@ -212,7 +212,7 @@
             /></a>
             <p><em>Mouse Effect</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/searchBar/index.html"
               ><img
                 src="images/searchBar.jpg"
@@ -221,7 +221,7 @@
             /></a>
             <p><em>Cool search bar</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/shift/main.html"
               ><img
                 src="images/shift.jpg"
@@ -230,7 +230,7 @@
             /></a>
             <p><em>Hold shift</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/slideEffect/main.html"
               ><img
                 src="images/slideEffect.jpg"
@@ -239,7 +239,7 @@
             /></a>
             <p><em>Slide Effect</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/sortPlugin/main.html"
               ><img
                 src="images/sortPlugin.jpg"
@@ -248,7 +248,7 @@
             /></a>
             <p><em>Sort Plugin</em></p>
           </div>
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/tapasList/main.html"
               ><img
                 src="images/tapasList.jpg"
@@ -257,7 +257,7 @@
             /></a>
             <p><em>Tapas List</em></p>
           </div>
-          <!-- <div class="project col-3">
+          <!-- <div class="project col-6 col-md-3">
             <a href="/videoPlayer/index.html"
               ><img
                 src="images/videoPlayer.jpg"
@@ -266,7 +266,7 @@
             /></a>
             <p><em>Custom Video Player</em></p>
           </div> -->
-          <div class="project col-3">
+          <div class="project col-6 col-md-3">
             <a href="/voiceChanger/main.html"
               ><img
                 src="images/voiceChanger.jpg"
@@ -275,7 +275,7 @@
             /></a>
             <p><em>Pick a Voice</em></p>
           </div>
-          <!-- <div class="project col-3">
+          <!-- <div class="project col-6 col-md-3">
             <a href="/WebRPG/index.html"
               ><img
                 src="images/WebRPG.jpg"
@@ -295,7 +295,7 @@
             class="sectionSpade"
             alt="spade image"
           />
-          Contact Me!
+          CONTACT ME
         </h1>
 
         <p>
@@ -344,7 +344,6 @@
           </script>
         </span>
       </footer>
-      <br /><br /><br />
     </div>
 
     <!-- scripts -->

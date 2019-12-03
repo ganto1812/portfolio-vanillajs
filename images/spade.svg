@@ -11,9 +11,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg815"
-   width="483.24652"
-   height="483.65762"
-   viewBox="0 0 483.24652 483.65762"
+   width="224.2216"
+   height="224.41234"
+   viewBox="0 0 224.2216 224.41234"
    sodipodi:docname="spade.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
@@ -44,8 +44,8 @@
      id="namedview817"
      showgrid="false"
      inkscape:zoom="1.7666667"
-     inkscape:cx="85.789586"
-     inkscape:cy="293.30963"
+     inkscape:cx="148.61977"
+     inkscape:cy="66.894539"
      inkscape:window-x="-13"
      inkscape:window-y="-13"
      inkscape:window-maximized="1"
@@ -58,7 +58,7 @@
      fit-margin-bottom="0" />
   <g
      id="g825"
-     transform="translate(-54.757583,0.827436)">
+     transform="matrix(0.46399009,0,0,0.46399009,-25.406976,0.3839221)">
     <g
        id="g817"
        transform="translate(3.9622641,-39.622641)">

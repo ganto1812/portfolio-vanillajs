@@ -18,127 +18,257 @@
       href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" /> -->
     <meta charset="utf-8" />
     <meta
       name="description"
       content="Full Stack Web Developer based in Chile, Santiago. Knowledge on: HTML, CSS, XML, JavaScript, C#, .NET, MVC, Bootstrap, Sass, JS."
-    />    
+    />
     <meta
       name="keywords"
       content="HTML,CSS,XML,JavaScript,Web developer,Front end,Back end,C#,Bootstrap,Sass,JS,.NET,MVC,Desarrollador web,Chile, Santiago"
     />
     <meta name="author" content="Antonella Pisani" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Web Developer Chile, Santiago - Desarrollador Web Chile, Santiago</title>
+    <title>
+      Web Developer Chile, Santiago - Desarrollador Web Chile, Santiago
+    </title>
   </head>
 
   <body>
     <div class="background-pattern"></div>
     <div class="big-container">
-
       <!-- navigation bar -->
-      <nav class="navbar navbar-expand-lg d-flex sticky-top" id="navbar">
-        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#home" class="nav-link active px-3">Home</a></li>
-            <li class="nav-item"><a href="#aboutme" class="nav-link px-3">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link px-3">Projects</a></li>
-            <li class="nav-item"><a href="#contactme" class="nav-link px-3">Contact</a></li>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark p-0"
+        id="navbar"
+      >
+        <span class="navbar-brand px-3">Menu</span>
+        <button
+          class="navbar-toggler mx-1"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Phone menu -->
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link px-3">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link px-3">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link px-3">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactme" class="nav-link px-3">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <header class="section header" id="home">
-        <!-- Big Antonella Pisani -->
-        <div class="name">
-          <img src="images/name.svg" alt="Antonella Pisani" class="img-fluid p-5" >
-        </div>
-
-        <!-- Logo -->
-        <div class="bigSpade">
-          <img src="images/spade.svg" id="bigSpade" alt="spade logo" />
+        <!-- Big Antonella Pisani and Logo -->
+        <div class="nameAndLogo">
+          <img
+            src="images/name.svg"
+            alt="Antonella Pisani"
+            class="name img-fluid px-5 pt-5 mt-5"
+          />
+          <img
+            src="images/spade.svg"
+            alt="spade logo"
+            class="logo img-fluid px-5"
+          />
         </div>
       </header>
 
       <!--intro -->
-      <div class="section col-md-8 offset-md-2" id="aboutme">
-          <img
+      <div class="section" id="aboutme">
+        <img
           src="images/spadeonly.svg"
           id="sectionSpade1"
-          class="sectionSpade"
+          class="sectionSpade mx-auto"
           alt="spade image"
         />
         <h1>
           ABOUT ME
         </h1>
-        <img src="images/me.jpg" id="profile" alt="Picture of myself" title="Antonella Pisani" />
+        <img
+          src="images/me.jpg"
+          id="profile"
+          alt="Picture of myself"
+          title="Antonella Pisani"
+          class="img-fluid mx-auto mt-5 px-5 rounded-circle col-8 col-md-3"
+        />
         <div class="intro">
           <div class="m-5">
             <div class="pb-5 mb-5">
               <p>Hi</p>
               <p>
-                My name is Antonella and I'm a self-taught Front End Developer, currently working to become a Full Stack Developer.
+                My name is Antonella and I'm a self-taught Front End Developer,
+                currently working to become a Full Stack Developer.
               </p>
             </div>
-        
           </div>
           <div>
             <div class="p-5">
-               <h2>Some of the languages I use today include:</h2>
-               <div class="row">
-                <img src="images/html.jpg" alt="html" class="mx-auto img-fluid m-2 col-md-2" title="HTML" />
-                <img src="images/css.jpg" alt="css" class="mx-auto img-fluid m-2 col-md-2" title="CSS" />
-                <img src="images/javascript.jpg" alt="javascript" class="mx-auto img-fluid m-2 col-md-2" title="javascript" />
-                <img src="images/cSharp.png" alt="c#" class="mx-auto img-fluid m-2 col-md-2" title="C#" />
-                <img src="images/sql-server.png" alt="SQL Server" class="mx-auto img-fluid m-2 col-md-2" title="SQL Server" />
-               </div>
-            
+              <h2>Some of the languages I use today include:</h2>
+              <div class="smallIcons d-flex flex-row flex-wrap">
+                <img
+                  src="images/html.jpg"
+                  alt="html"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="HTML"
+                />
+                <img
+                  src="images/css.jpg"
+                  alt="css"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="CSS"
+                />
+                <img
+                  src="images/javascript.jpg"
+                  alt="javascript"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="javascript"
+                />
+                <img
+                  src="images/cSharp.png"
+                  alt="c#"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="C#"
+                />
+                <img
+                  src="images/sql-server.png"
+                  alt="SQL Server"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="SQL Server"
+                />
+              </div>
             </div>
             <div class="p-5">
-               <h2>Libraries &amp; Frameworks:</h2>
-               <div class="row">
-                <img src="images/net.png" alt=".NET" class="mx-auto img-fluid m-2 col-md-2" title=".NET" />
-                <img src="images/jquery.png" alt="jquery" class="mx-auto img-fluid m-2 col-md-2" title="JQuery" />
-                <img src="images/reactjs.png" alt="React JS" class="mx-auto img-fluid m-2 col-md-2" title="React" />
-                <img src="images/bootstrap.jpg" alt="Bootstrap" class="mx-auto img-fluid m-2 col-md-2" title="Bootstrap" />
-                <img src="images/sass.png" alt="Sass" class="mx-auto img-fluid m-2 col-md-2" title="SASS" />
-               </div>         
+              <h2>Libraries &amp; Frameworks:</h2>
+              <div class="smallIcons row">
+                <img
+                  src="images/net.png"
+                  alt=".NET"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title=".NET"
+                />
+                <img
+                  src="images/jquery.png"
+                  alt="jquery"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="JQuery"
+                />
+                <img
+                  src="images/reactjs.png"
+                  alt="React JS"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="React"
+                />
+                <img
+                  src="images/bootstrap.jpg"
+                  alt="Bootstrap"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Bootstrap"
+                />
+                <img
+                  src="images/sass.png"
+                  alt="Sass"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="SASS"
+                />
+              </div>
             </div>
-           <div class="p-5">
-             <h2>Designing software:</h2>
-            <div class="row">
-              <img src="images/photoshop.svg" alt="Photoshop" class="mx-auto img-fluid m-2 col-md-2" title="Photoshop" />
-              <img src="images/illustrator.jpg" alt="Illustrator" class="mx-auto img-fluid m-2 col-md-2" title="Illustrator" />
-              <img src="images/adobe-xd.svg" alt="XD" class="mx-auto img-fluid m-2 col-md-2" title="Adove XD" />
-              <img src="images/gimp.png" alt="Gimp" class="mx-auto img-fluid m-2 col-md-2" title="Gimp" />
-              <img src="images/inkscape.png" alt="Inkscape" class="mx-auto img-fluid m-2 col-md-2" title="Inkscape" />
+            <div class="p-5">
+              <h2>Designing software:</h2>
+              <div class="smallIcons row">
+                <img
+                  src="images/photoshop.svg"
+                  alt="Photoshop"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Photoshop"
+                />
+                <img
+                  src="images/illustrator.jpg"
+                  alt="Illustrator"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Illustrator"
+                />
+                <img
+                  src="images/adobe-xd.svg"
+                  alt="XD"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Adove XD"
+                />
+                <img
+                  src="images/gimp.png"
+                  alt="Gimp"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Gimp"
+                />
+                <img
+                  src="images/inkscape.png"
+                  alt="Inkscape"
+                  class="mx-auto img-fluid p-2 col-4 col-md-2"
+                  title="Inkscape"
+                />
+              </div>
             </div>
-           </div>
-           <div class="p-5">
-             <h2>Others:</h2>
-            <div class="row">
-              <img src="images/github.jpg" alt="github" class="mx-auto img-fluid m-2 col-md-3" title="GitHub" />
-              <img src="images/slack.png" alt="Slack" class="mx-auto img-fluid m-2 col-md-3" title="Slack" />
-              <img src="images/icescrum.png" alt="IceScrum" class="mx-auto img-fluid m-2 col-md-3" title="IceScrum" />
-              <img src="images/figma.png" alt="Figma" class="mx-auto img-fluid m-2 col-md-3" title="Figma" />
+            <div class="p-5">
+              <h2>Others:</h2>
+              <div class="smallIcons row">
+                <img
+                  src="images/github.jpg"
+                  alt="github"
+                  class="mx-auto img-fluid p-2 col-6 col-md-2"
+                  title="GitHub"
+                />
+                <img
+                  src="images/slack.png"
+                  alt="Slack"
+                  class="mx-auto img-fluid p-2 col-6 col-md-2"
+                  title="Slack"
+                />
+                <img
+                  src="images/icescrum.png"
+                  alt="IceScrum"
+                  class="mx-auto img-fluid p-2 col-6 col-md-2"
+                  title="IceScrum"
+                />
+                <img
+                  src="images/figma.png"
+                  alt="Figma"
+                  class="mx-auto img-fluid p-2 col-6 col-md-2"
+                  title="Figma"
+                />
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </div>
 
       <!--projects -->
-      <div class="section container col-md-8 offset-md-2" id="projects">
+      <div
+        class="section container col-md-8 offset-md-2 pt-5 mt-5"
+        id="projects"
+      >
         <img
-            src="images/spadeonly.svg"
-            id="sectionSpade2"
-            class="sectionSpade"
-            alt="spade image"
-          />
-          <h1>
+          src="images/spadeonly.svg"
+          id="sectionSpade2"
+          class="sectionSpade mx-auto"
+          alt="spade image"
+        />
+        <h1>
           MY PROJECTS
         </h1>
         <p>Here are some of my projects.</p>
@@ -148,7 +278,7 @@
             <a href="/tributePage/tribute.html">
               <img
                 src="images/tribute.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="screenshot of tribute project"
               />
             </a>
@@ -158,7 +288,7 @@
             <a href="/todolist/todo.html"
               ><img
                 src="images/todo.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of to do list project"
             /></a>
             <p><em>To do App</em></p>
@@ -167,7 +297,7 @@
             <a href="/drums/drums.html"
               ><img
                 src="images/drum.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of drumset project"
             /></a>
             <p><em>Drum Set</em></p>
@@ -176,7 +306,7 @@
             <a href="/clock/clock.html"
               ><img
                 src="images/clock.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of clock project"
             /></a>
             <p><em>Clock</em></p>
@@ -185,7 +315,7 @@
             <a href="/liveUpdate/index.html"
               ><img
                 src="images/liveUpdate.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of Image editing project"
             /></a>
             <p><em>Live Editing</em></p>
@@ -194,7 +324,7 @@
             <a href="/draw/index.html"
               ><img
                 src="images/draw.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of drawing project"
             /></a>
             <p><em>Draw!</em></p>
@@ -203,7 +333,7 @@
             <a href="/flexPanels/index.html"
               ><img
                 src="images/flexPanels.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of flex panels"
             /></a>
             <p><em>Flex Panels</em></p>
@@ -212,7 +342,7 @@
             <a href="/mouseEffects/main.html"
               ><img
                 src="images/mouseEffects.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of mouse effects project"
             /></a>
             <p><em>Mouse Effect</em></p>
@@ -221,7 +351,7 @@
             <a href="/searchBar/index.html"
               ><img
                 src="images/searchBar.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of cool search bar project"
             /></a>
             <p><em>Cool search bar</em></p>
@@ -230,7 +360,7 @@
             <a href="/shift/main.html"
               ><img
                 src="images/shift.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of hold shift project"
             /></a>
             <p><em>Hold shift</em></p>
@@ -239,7 +369,7 @@
             <a href="/slideEffect/main.html"
               ><img
                 src="images/slideEffect.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of images sliding on scroll project"
             /></a>
             <p><em>Slide Effect</em></p>
@@ -248,7 +378,7 @@
             <a href="/sortPlugin/main.html"
               ><img
                 src="images/sortPlugin.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of sort plugin project"
             /></a>
             <p><em>Sort Plugin</em></p>
@@ -257,7 +387,7 @@
             <a href="/tapasList/main.html"
               ><img
                 src="images/tapasList.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of tapas project"
             /></a>
             <p><em>Tapas List</em></p>
@@ -266,7 +396,7 @@
             <a href="/videoPlayer/index.html"
               ><img
                 src="images/videoPlayer.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of video player project"
             /></a>
             <p><em>Custom Video Player</em></p>
@@ -275,7 +405,7 @@
             <a href="/voiceChanger/main.html"
               ><img
                 src="images/voiceChanger.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of voice changer project"
             /></a>
             <p><em>Pick a Voice</em></p>
@@ -284,7 +414,7 @@
             <a href="/WebRPG/index.html"
               ><img
                 src="images/WebRPG.jpg"
-                class="projectImage"
+                class="img-fluid mx-auto projectImage"
                 alt="Screenshot of WebRPG project"
             /></a>
             <p><em>WebRPG</em></p> -->
@@ -294,13 +424,13 @@
       <!--contact me-->
       <div class="section col-md-8 offset-md-2" id="contactme">
         <img
-            src="images/spadeonly.svg"
-            id="sectionSpade3"
-            class="sectionSpade"
-            alt="spade image"
-          />
+          src="images/spadeonly.svg"
+          id="sectionSpade3"
+          class="sectionSpade mx-auto"
+          alt="spade image"
+        />
         <h1>
-        CONTACT ME
+          CONTACT ME
         </h1>
 
         <p>
@@ -312,30 +442,40 @@
           method="post"
           name="contact"
           action="https://formspree.io/meypajzm"
-          class="contact"
+          class="contact bg-dark text-light p-5 mt-5"
           id="contact"
         >
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" name="name" required /> <br />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="_replyto" required /> <br /><br />
-        </div>
-         <div class="form-group">
-           <label for="message">Message</label>
-          <textarea
-            name="message"
-            class="form-control col-4 offset-4"
-            rows="10"
-            cols="50"
-            form="contact"
-            required
-          ></textarea>
-         </div>         
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control m-0" required />
+          </div>
+          <div class="form-group py-2 my-2">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="_replyto"
+              class="form-control m-0"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              class="form-control"
+              rows="5"
+              form="contact"
+              required
+            ></textarea>
+          </div>
           <br />
-          <button id="button" type="submit" name="submit" value="Send">
+          <button
+            id="button"
+            class="btn btn-outline-light"
+            type="submit"
+            name="submit"
+            value="Send"
+          >
             ✉ Send
           </button>
         </form>
@@ -351,9 +491,26 @@
     </div>
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/8640c1d893.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8640c1d893.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   </body>
 </html>

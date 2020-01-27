@@ -14,21 +14,32 @@ const bands = [
   "An Old Dog"
 ];
 
-document.querySelector(".bands").innerHTML = bands
-  .map(band => `<li>${band}</li>`)
-  .join("");
+function disorganize() {
+  document.querySelector(".bands").innerHTML = bands
+    .map(band => `<li>${band}</li>`)
+    .join("");
+}
+disorganize();
 function strip(bandName) {
   return bandName.replace(/^(a |the |an )/i, "").trim();
 }
-
-let sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
+let sortedBands = [...bands].sort();
+let connectorSortedBands = [...bands].sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
 // if (strip(a) > strip(b)) {
 //     return 1;
 // } else {
 //     return -1;
 //}
-document.querySelector("button").addEventListener("click", () => {
+document.getElementById('unsorted').addEventListener("click", () => disorganize());
+
+document.getElementById('sort').addEventListener("click", () => {
   document.querySelector(".bands").innerHTML = sortedBands
+    .map(band => `<li>${band}</li>`)
+    .join("");
+});
+
+document.getElementById('sortWithout').addEventListener("click", () => {
+  document.querySelector(".bands").innerHTML = connectorSortedBands
     .map(band => `<li>${band}</li>`)
     .join("");
 });

@@ -1,0 +1,60 @@
+<div id="root"></div>
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js"
+  crossorigin
+></script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  crossorigin
+></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+  const rootElement = document.getElementById("root");
+  //   const element = document.createElement("div");
+  //   element.textContent = "Hello World";
+  //   element.className = "container";
+  //   rootElement.appendChild(element);
+
+  //   const element = React.createElement("div", {
+  //     className: "container",
+  //     children: ["Hello World", "Goodbye World"]
+  //   });
+  //   console.log(element);
+
+  // const content = "Hello World";
+  //   const element = <div className="container">{content}</div>;
+
+  // const element = <div className="container">{(() => content)()}</div>;
+
+  // const myClassName = "container";
+  // const props = {
+  //   className: "container",
+  //   children: "Hello World"
+  // };
+  // const element = <div {...props} />;
+
+  // const element = (
+  //   <div className="container">
+  //     <div>Hello World</div>
+  //     <div>Hello World</div>
+  //   </div>
+  // );
+  //SAME AS//
+  // const helloWorld = <div>Hello World</div>;
+  // const element = (
+  //   <div className="container">
+  //     {helloWorld}
+  //     {helloWorld}
+  //   </div>
+  // );
+
+  const message = props => <div>{props.msg}</div>;
+  const element = (
+    <div className="container">
+      {message({ msg: "Hello World" })}
+      {message({ msg: "Goodbye World" })}
+    </div>
+  );
+
+  ReactDOM.render(element, rootElement);
+</script>

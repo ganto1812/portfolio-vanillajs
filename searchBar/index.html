@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cool Search Bar</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../backToProjects.css" />
+    <link
+      rel="icon"
+      href="../images/spade.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <form class="search-form">
+      <input type="text" class="search" placeholder="City or State" />
+      <ul class="suggestions">
+        <li></li>
+      </ul>
+    </form>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Cool Search Bar</title>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="../backToProjects.css" />
-  <link rel="icon" href="../images/spade.ico" type="image/gif" sizes="16x16" />
-</head>
+    <!-- Back to projects -->
+    <div class="back-projects">
+        <a href="https://antonellapisani.net/#projects">Back to projects</a>
+      </div>
+      
+    <script>
+      const endpoint =
+        "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
 
-<body>
-  <form class="search-form">
-    <input type="text" class="search" placeholder="City or State" />
-    <ul class="suggestions">
-      <li></li>
-    </ul>
-  </form>
+      const cities = [];
 
-  <!-- Back to projects -->
-  <div class="back-projects">
-    <a href="https://antonellapisani.net/#projects">Back to projects</a>
-  </div>
+      fetch(endpoint)
+        .then(blob => blob.json())
+        .then(data => cities.push(...data));
 
-  <script>
-    const endpoint =
-      "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
+      function findMatch(wordToMatch, cities) {
+        return cities.filter(place => {
+          const regex = new RegExp(wordToMatch, "gi");
+          return place.city.match(regex) || place.state.match(regex);
+        });
+      }
 
-    const cities = [];
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
 
-    fetch(endpoint)
-      .then(blob => blob.json())
-      .then(data => cities.push(...data));
-
-    function findMatch(wordToMatch, cities) {
-      return cities.filter(place => {
-        const regex = new RegExp(wordToMatch, "gi");
-        return place.city.match(regex) || place.state.match(regex);
-      });
-    }
-
-    function numberWithCommas(x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-
-    function displayMatch() {
-      const matchArray = findMatch(this.value, cities);
-      const html = matchArray
-        .map(place => {
-          const regex = new RegExp(this.value, "gi");
-          const cityName = place.city.replace(
-            regex,
-            `<span class="hl">${this.value}</span>`
-          );
-          const stateName = place.state.replace(
-            regex,
-            `<span class="hl">${this.value}</span>`
-          );
-          return `
+      function displayMatch() {
+        const matchArray = findMatch(this.value, cities);
+        const html = matchArray
+          .map(place => {
+            const regex = new RegExp(this.value, "gi");
+            const cityName = place.city.replace(
+              regex,
+              `<span class="hl">${this.value}</span>`
+            );
+            const stateName = place.state.replace(
+              regex,
+              `<span class="hl">${this.value}</span>`
+            );
+            return `
           <li>
               <span class="name">${cityName}, ${stateName}</span>
               <span class="population">${numberWithCommas(
-            place.population
-          )}</span>
+                place.population
+              )}</span>
           </li>
           `;
-        })
-        .join("");
-      suggestions.innerHTML = html;
-    }
+          })
+          .join("");
+        suggestions.innerHTML = html;
+      }
 
-    const searchInput = document.querySelector(".search");
-    const suggestions = document.querySelector(".suggestions");
+      const searchInput = document.querySelector(".search");
+      const suggestions = document.querySelector(".suggestions");
 
-    searchInput.addEventListener("change", displayMatch);
-    searchInput.addEventListener("keyup", displayMatch);
-  </script>
-</body>
-
+      searchInput.addEventListener("change", displayMatch);
+      searchInput.addEventListener("keyup", displayMatch);
+    </script>
+  </body>
 </html>

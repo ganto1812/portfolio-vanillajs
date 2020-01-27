@@ -1,158 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Panels</title>
+    <link rel="stylesheet" href="../backToProjects.css" />
+    <link
+      rel="icon"
+      href="../images/spade.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <style>
+      html {
+        box-sizing: border-box;
+        background: #ffc600;
+        font-family: "helvetica neue";
+        font-size: 20px;
+        font-weight: 200;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Flex Panels</title>
-  <link rel="stylesheet" href="../backToProjects.css" />
-  <link rel="icon" href="../images/spade.ico" type="image/gif" sizes="16x16" />
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css" />
-</head>
+      body {
+        margin: 0;
+      }
 
-<body>
-  <style>
-    html {
-      box-sizing: border-box;
-      background: #ffc600;
-      font-family: "helvetica neue";
-      font-size: 20px;
-      font-weight: 200;
-    }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      .panels {
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+      }
+      .panel {
+        background: #6b0f9c;
+        box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+        color: white;
+        text-align: center;
+        align-items: center;
+        /* Safari transitionend event.propertyName === flex */
+        /* Chrome + FF transitionend event.propertyName === flex-grow */
+        transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+          flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+        font-size: 20px;
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .panel1 {
+        background-image: url(https://images.unsplash.com/photo-1544418030-87bf3fa62883?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+      }
+      .panel2 {
+        background-image: url(https://images.unsplash.com/photo-1529460608-bc455fccd5a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80);
+      }
+      .panel3 {
+        background-image: url(https://images.unsplash.com/photo-1440968872456-dec3196b9bee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1318&q=80);
+      }
+      .panel4 {
+        background-image: url(https://images.unsplash.com/uploads/1411160110892ab555b6f/80b0d25e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+      }
+      .panel5 {
+        background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+      }
+      /* Flex Children */
+      .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    body {
-      margin: 0;
-    }
+      .panel > *:first-child {
+        transform: translateY(-100%);
+      }
+      .panel.open-active > *:first-child {
+        transform: translateY(0);
+      }
+      .panel > *:last-child {
+        transform: translateY(100%);
+      }
+      .panel.open-active > *:last-child {
+        transform: translateY(0);
+      }
 
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
+      .panel p {
+        text-transform: uppercase;
+        font-family: "Amatic SC", cursive;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
+      }
 
-    .panels {
-      min-height: 100vh;
-      overflow: hidden;
-      display: flex;
-    }
+      .panel p:nth-child(2) {
+        font-size: 4em;
+      }
+      .panel.open {
+        flex: 5;
+        font-size: 40px;
+      }
+    </style>
 
-    .panel {
-      background: #6b0f9c;
-      box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-      color: white;
-      text-align: center;
-      align-items: center;
-      /* Safari transitionend event.propertyName === flex */
-      /* Chrome + FF transitionend event.propertyName === flex-grow */
-      transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-      font-size: 20px;
-      background-size: cover;
-      background-position: center;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .panel1 {
-      background-image: url(https://images.unsplash.com/photo-1544418030-87bf3fa62883?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    }
-
-    .panel2 {
-      background-image: url(https://images.unsplash.com/photo-1529460608-bc455fccd5a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80);
-    }
-
-    .panel3 {
-      background-image: url(https://images.unsplash.com/photo-1440968872456-dec3196b9bee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1318&q=80);
-    }
-
-    .panel4 {
-      background-image: url(https://images.unsplash.com/uploads/1411160110892ab555b6f/80b0d25e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
-    }
-
-    .panel5 {
-      background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    }
-
-    /* Flex Children */
-    .panel>* {
-      margin: 0;
-      width: 100%;
-      transition: transform 0.5s;
-      flex: 1 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .panel>*:first-child {
-      transform: translateY(-100%);
-    }
-
-    .panel.open-active>*:first-child {
-      transform: translateY(0);
-    }
-
-    .panel>*:last-child {
-      transform: translateY(100%);
-    }
-
-    .panel.open-active>*:last-child {
-      transform: translateY(0);
-    }
-
-    .panel p {
-      text-transform: uppercase;
-      font-family: "Amatic SC", cursive;
-      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
-    }
-
-    .panel p:nth-child(2) {
-      font-size: 4em;
-    }
-
-    .panel.open {
-      flex: 5;
-      font-size: 40px;
-    }
-  </style>
-
-  <div class="panels">
-    <div class="panel panel1">
-      <p>Don't</p>
-      <p>Work</p>
-      <p>Unorganized</p>
+    <div class="panels">
+      <div class="panel panel1">
+        <p>Don't</p>
+        <p>Work</p>
+        <p>Unorganized</p>
+      </div>
+      <div class="panel panel2">
+        <p>Study</p>
+        <p>Hard</p>
+        <p>Everyday</p>
+      </div>
+      <div class="panel panel3">
+        <p>You</p>
+        <p>Never</p>
+        <p>Give up</p>
+      </div>
+      <div class="panel panel4">
+        <p>But remember to</p>
+        <p>Give</p>
+        <p>Yourself a break</p>
+      </div>
+      <div class="panel panel5">
+        <p>Lift</p>
+        <p>Up</p>
+        <p>Your spirit</p>
+      </div>
     </div>
-    <div class="panel panel2">
-      <p>Study</p>
-      <p>Hard</p>
-      <p>Everyday</p>
-    </div>
-    <div class="panel panel3">
-      <p>You</p>
-      <p>Never</p>
-      <p>Give up</p>
-    </div>
-    <div class="panel panel4">
-      <p>But remember to</p>
-      <p>Give</p>
-      <p>Yourself a break</p>
-    </div>
-    <div class="panel panel5">
-      <p>Lift</p>
-      <p>Up</p>
-      <p>Your spirit</p>
-    </div>
-  </div>
-
-  <!-- Back to projects -->
-  <div class="back-projects">
+    
+<!-- Back to projects -->
+<div class="back-projects">
     <a href="https://antonellapisani.net/#projects">Back to projects</a>
   </div>
 
-  <script src="main.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>

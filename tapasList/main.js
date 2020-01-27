@@ -22,17 +22,12 @@ function populateList(plates = [], platesList) {
         <li>
             <input type="checkbox" data-index=${i} id="item${i}" ${
         plate.done ? "checked" : ""
-        } />
+      } />
             <label for="">${plate.text}</label>
         </li>
         `;
     })
     .join("");
-}
-function reset() {
-  items.length = 0;
-  populateList(items, itemsList);
-  localStorage.setItem("items", JSON.stringify(items));
 }
 
 function toggleDone(e) {

@@ -1,2 +1,2 @@
 
-#Vanilla JS Projects from My Portfolio#
+# Vanilla JS Projects from My Portfolio

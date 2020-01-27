@@ -29,45 +29,45 @@ h2 {
 }
 
 p {
-  font-size: 25px;
-  margin: 20px;
   font-weight: bold;
 }
 
 .nameAndLogo {
-  display: block;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100vw;
-          flex: 0 1 100vw;
+  display: flexbox;
   height: 100vh;
 }
 
-.rotation {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  -webkit-transition: 5s;
-  transition: 5s;
+.logo {
+  -webkit-animation: logo-animation 2s ease-in-out 0s infinite alternate;
+          animation: logo-animation 2s ease-in-out 0s infinite alternate;
+}
+
+@-webkit-keyframes logo-animation {
+  50% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-20px) rotate(2deg);
+            transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes logo-animation {
+  50% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-20px) rotate(2deg);
+            transform: translateY(-20px) rotate(2deg);
+  }
 }
 
 .primary-color {
   color: #0490b3;
 }
 
-.navbar {
-  background-color: #0490b3;
-  -webkit-box-shadow: 0 1px 6px 0 #575757;
-          box-shadow: 0 1px 6px 0 #575757;
-}
-
-.navbar a:hover {
-  background-color: #005368;
-}
-
-.navbar .active {
-  background-color: #7e1946;
-}
-
-/* Home */
 .sectionSpade {
   height: 60px;
   -webkit-animation-name: animation;
@@ -108,64 +108,25 @@ p {
   background-color: aliceblue;
 }
 
-.introIm,
-.libraryIm {
-  height: 100px;
-  margin: 10px 0;
-}
-
-.languageIm {
-  width: 100px;
-  margin: 100px 0;
-}
-
 .projectImage {
-  width: 100px;
-  border: solid 0.3em #cccccc75;
   -webkit-transition: width 0.5s;
   /* For Safari 3.1 to 6.0 */
   transition: width 0.5s;
   -webkit-box-shadow: 0px 0px 0px 0.3em rgba(197, 197, 197, 0.13);
           box-shadow: 0px 0px 0px 0.3em rgba(197, 197, 197, 0.13);
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
 }
 
-.projectImage:hover {
-  width: 150px;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+.projects a {
+  text-decoration: none;
 }
 
-em {
-  font-size: 20px;
+.card-title {
+  color: #0490b3;
+  font-weight: bold;
 }
 
-.contact {
-  color: #4b4b4b;
-  font-size: 30px;
-}
-
-input {
-  margin: 10px;
-  padding: 5px;
-}
-
-.message {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  font-family: arial;
-}
-
-img {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.card-text {
+  color: #686868;
 }
 
 @media only screen and (min-width: 900px) {
@@ -174,23 +135,8 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
-  .nameAndLogo .name {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 auto;
-            flex: 3 1 auto;
-  }
   .nameAndLogo .logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 3 auto;
-            flex: 1 3 auto;
-    margin-top: 20em;
-  }
-  .section {
-    margin: 0 auto;
-    padding: 0 8em;
-  }
-  .smallIcons {
-    padding: 0 10em;
+    margin-top: 10em;
   }
 }
 /*# sourceMappingURL=main.css.map */

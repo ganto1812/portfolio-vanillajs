@@ -1,0 +1,21 @@
+.back-projects {
+	bottom: 10px;
+	right: 10px;
+	position: fixed;
+	font-size: 20px;
+	z-index: 999;
+	background-color: #00364d;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+  }
+  .back-projects a {
+	color:#008fcc;
+	background-color: #00364d;
+  }
+  .back-projects:hover {
+  background-color: #005377
+  }
+  .back-projects:hover a {
+	background-color: #005377
+	}

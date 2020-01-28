@@ -4,12 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <title>Draw!</title>
-  <link rel="stylesheet" href="../backToProjects.css" />
+  <link rel="stylesheet" href="../css/externalBtn.css" />
   <link rel="icon" href="../images/spade.ico" type="image/gif" sizes="16x16" />
 </head>
 
 <body>
-  <canvas id="draw" width="800" height="800"></canvas>
+  <!-- HTML -->
+  <div class="center">
+    <h1>Click and hold your mouse to draw!</h1>
+    <div>
+      <form>
+        <input type="color" value="#0490b3" oninput="pickColour(this.value)">
+        <input type="range" value="10" oninput="pickSize(this.value)">
+      </form>
+      <button onclick="(random = true)" class="button">Random</button>
+      <button onclick="(ctx.clearRect(0, 0, canvas.width, canvas.height))" class="button">Reset</button>
+
+    </div>
+    <canvas id="draw"></canvas>
+  </div>
+  <!-- CSS -->
   <style>
     html,
     body {
@@ -17,22 +31,29 @@
       margin: 0;
     }
 
-    .draw {
-      border: 1px solid black;
+    .center {
+      text-align: center;
+
     }
 
-    @media only screen and (max-width: 600px) {
-      canvas {
-        width: 400px;
-        height: 800px;
-      }
+    .button {
+      margin: 1em 0;
+      padding: 4px;
+      background-color: #91c6d4;
+      color: #0490b3;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    #draw {
+      border: 3px dotted #505050;
     }
   </style>
 
   <!-- Back to projects -->
-  <div class="back-projects">
-    <a href="https://antonellapisani.net/#projects">Back to projects</a>
-  </div>
+  <button class="backProjectsBtn">
+    <a href="/#projects">Back to projects</a>
+  </button>
 
   <script src="main.js"></script>
 </body>

@@ -1,94 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Live Editing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="../backToProjects.css" />
-    <link
-      rel="icon"
-      href="../images/spade.ico"
-      type="image/gif"
-      sizes="16x16"
-    />
-  </head>
-  <body>
-    <h1>Update any of the variables <span>live</span></h1>
-    <div class="controls">
-      <label for="border">Border:</label>
-      <input
-        type="range"
-        name="border"
-        min="10"
-        max="200"
-        value="10"
-        data-sizing="px"
-      />
-    </div>
-    <div class="controls">
-      <label for="grayscale">Grayscale:</label>
-      <input
-        type="range"
-        name="grayscale"
-        min="1"
-        max="100"
-        value="0"
-        data-sizing="%"
-      />
-    </div>
-    <div class="controls">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Live Editing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="../css/externalBtn.css" />
+  <link rel="icon" href="../images/spade.ico" type="image/gif" sizes="16x16" />
+</head>
+
+<body>
+  <h1>Update any of the variables <span>live</span></h1>
+  <div class="controls">
+    <label for="border">Border:</label>
+    <input type="range" name="border" min="10" max="200" value="10" data-sizing="px" />
+  </div>
+  <div class="controls">
+    <label for="grayscale">Grayscale:</label>
+    <input type="range" name="grayscale" min="1" max="100" value="0" data-sizing="%" />
+  </div>
+  <div class="controls">
     <form>
       <label for="saturate">Saturate:</label>
-      <input
-        type="range"
-        name="saturate"
-        min="1"
-        max="100"
-        value="100"
-        data-sizing="%"
-      />
-    </div>
-    <div class="controls">
-      <label for="sepia">Sepia:</label>
-      <input
-        type="range"
-        name="sepia"
-        min="1"
-        max="100"
-        value="0"
-        data-sizing="%"
-      />
-    </div>
-    <div class="controls">
-      <label for="blur">Blur:</label>
-      <input
-        type="range"
-        name="blur"
-        min="0"
-        max="25"
-        value="0"
-        data-sizing="px"
-      />
-    </div>
-    <div class="controls">
-      <label for="color">Color</label>
-      <input type="color" name="color" value="#ffc600" />
-    </div>
+      <input type="range" name="saturate" min="1" max="100" value="100" data-sizing="%" />
+  </div>
+  <div class="controls">
+    <label for="sepia">Sepia:</label>
+    <input type="range" name="sepia" min="1" max="100" value="0" data-sizing="%" />
+  </div>
+  <div class="controls">
+    <label for="blur">Blur:</label>
+    <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
+  </div>
+  <div class="controls">
+    <label for="color">Color</label>
+    <input type="color" name="color" value="#ffc600" />
+  </div>
 
-      <input type="file" value="Upload" onchange="uploadImage(this)" name="submit" id="image" accept="image/x-png,image/gif,image/jpeg"/>
-    </form>
+  <input type="file" value="Upload" onchange="uploadImage(this)" name="submit" id="image"
+    accept="image/x-png,image/gif,image/jpeg" />
+  </form>
 
-    <img
-      src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1351&q=80" id="editImage" alt="image to edit" download onclick="download()"
-    />
+  <img
+    src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1351&q=80"
+    id="editImage" alt="image to edit" download onclick="download()" />
 
-    <!-- Back to projects -->
-    <div class="back-projects">
-        <a href="https://antonellapisani.net/#projects">Back to projects</a>
-      </div>
+  <!-- Back to projects -->
+  <button class="backProjectsBtn">
+    <a href="/#projects">Back to projects</a>
+  </button>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>

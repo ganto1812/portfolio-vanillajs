@@ -23,17 +23,19 @@ function setDate() {
   minutesHand.style.transform = `rotate(${minutesDegree}deg)`;
   hoursHand.style.transform = `rotate(${hoursDegree}deg)`;
 
-  var text = document.querySelector(".text");
+  document.getElementById('time').innerHTML = (`${hours}:${minutes}`);
+
   changeBackground();
   function changeBackground() {
     if (hours >= 20 || hours < 5) {
-      body.style.backgroundImage = "linear-gradient(darkblue, black)";
-      text.style.color = "white";
-      text.style.textShadow = "2px 2px 100px white";
+      // LATE NIGHT
+      body.style.background = "linear-gradient(0deg, rgba(255,228,196,1) 0%, rgba(0,87,94,1) 50%, rgba(0,0,0,1) 100%)";
     } else if (hours >= 12 && hours < 20) {
-      body.style.backgroundImage = "linear-gradient(yellow, orange)";
+      // AFTERNOON
+      body.style.background = "linear-gradient(0deg, rgba(245,77,0,1) 0%, rgba(255,226,0,1) 50%, rgba(0,236,255,1) 100%)";
     } else {
-      body.style.backgroundImage = "linear-gradient(lightSkyBlue, white)";
+      // EARLY MORNING
+      body.style.background = "linear-gradient(0deg, rgba(0,138,149,1) 0%, rgba(255,255,255,1) 100%)";
     }
   }
 }

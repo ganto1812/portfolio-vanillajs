@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hold Shift</title>
-    <link rel="stylesheet" href="../backToProjects.css" />
-    <link
-      rel="icon"
-      href="../images/spade.ico"
-      type="image/gif"
-      sizes="16x16"
-    />
-  </head>
-  <body>
-    <style>
-      html {
-        font-family: sans-serif;
-        background: #6b0a32;
-      }
-      .inbox {
-        max-width: 400px;
-        margin: 100px auto;
-        background: whitesmoke;
-        border-radius: 15px;
-        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-      }
-      .item {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #b8b8b8;
-      }
-      .item:last-child {
-        border-bottom: 0;
-      }
-      input:checked + p {
-        background: #dfdfdf;
-        text-decoration: line-through;
-      }
-      input[type="checkbox"] {
-        margin: 20px;
-      }
-      p {
-        margin: 0;
-        padding: 20px;
-        transition: background 0.5s;
-        flex: 1;
-        font-family: "helvetica neue";
-        font-size: 20px;
-        font-weight: 200;
-        border-left: 1px solid #d1e2ff;
-      }
-    </style>
-    <div class="inbox">
-      <div class="item">
-        <input type="checkbox" />
-        <p>This is a project</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>For multi-selecting items</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>When you press shift</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>It should select</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>All of the items</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>In between</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>Whenever you press shift</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>Check the console</p>
-      </div>
-      <div class="item">
-        <input type="checkbox" />
-        <p>To see how it works</p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hold Shift</title>
+  <link rel="stylesheet" href="../css/externalBtn.css" />
+  <link rel="icon" href="../images/spade.ico" type="image/gif" sizes="16x16" />
+</head>
+
+<body>
+  <style>
+    html {
+      font-family: sans-serif;
+      background: #6b0a32;
+    }
+
+    .inbox {
+      max-width: 400px;
+      margin: 100px auto;
+      background: whitesmoke;
+      border-radius: 15px;
+      box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #b8b8b8;
+    }
+
+    .item:last-child {
+      border-bottom: 0;
+    }
+
+    input:checked+p {
+      background: #dfdfdf;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      margin: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 20px;
+      transition: background 0.5s;
+      flex: 1;
+      font-family: "helvetica neue";
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #d1e2ff;
+    }
+  </style>
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox" />
+      <p>This is a project</p>
     </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>For multi-selecting items</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>When you press shift</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>It should select</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>All of the items</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>In between</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>Whenever you press shift</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>Check the console</p>
+    </div>
+    <div class="item">
+      <input type="checkbox" />
+      <p>To see how it works</p>
+    </div>
+  </div>
 
-    <!-- Back to projects -->
-    <div class="back-projects">
-        <a href="https://antonellapisani.net/#projects">Back to projects</a>
-      </div>
+  <!-- Back to projects -->
+  <button class="backProjectsBtn">
+    <a href="/#projects">Back to projects</a>
+  </button>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>

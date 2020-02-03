@@ -16,7 +16,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Indie Flower';
+	font-family: 'Gill Sans', sans-serif;
 	text-align: center;
 	color: map-get($map: $colours, $key: text);
 }
@@ -96,22 +96,16 @@ p {
 .card-title {
 	color: map-get($map: $colours, $key: primary);
 	font-weight: bold;
-
 }
 .card-text {
 	color: #686868;
 }
-
-
 
 @media only screen and (min-width: 900px) {
 	.nameAndLogo {
 		display: flex;
 		.logo {
 			margin-top: 10em;
-
 		}
-
 	}
-
 }

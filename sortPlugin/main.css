@@ -21,9 +21,6 @@ button {
 	color: white;
 	cursor: pointer;
 }
-button:hover {
-	background-color: rgb(45, 121, 26);
-}
 .tooltip {
 	font-size: 12px;
 	visibility: hidden;

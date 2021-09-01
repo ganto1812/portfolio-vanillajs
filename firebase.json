@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "ana-portfolio-vanillajs",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
